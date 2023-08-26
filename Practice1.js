@@ -210,15 +210,6 @@ let allCandidate={"m":male,"f":female}
 // console.log(b)
 
 
-
-let myArray = [12,-2,55,68,80];
-
-[myArray [0],myArray [1]]=[myArray [1],myArray [0]]
-
-console.log(myArray )
-
-
-
     
    
     
