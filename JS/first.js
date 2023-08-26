@@ -117,3 +117,17 @@
 
 // console.log(person)
 
+
+// Object methode
+
+let obj1={a:1,b:2}
+let obj2={c:3,d:4}
+
+// let newObj={...obj1,...obj2}
+let newObj=Object.assign({},obj1,obj2)
+let newObj1=Object.keys(obj1,obj2)
+let newObj2=Object.values(obj1,obj2)
+let newObj4=Object.entries(newObj)
+
+console.log(obj1.hasOwnProperty("av"));
+
