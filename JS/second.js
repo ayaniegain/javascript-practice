@@ -1,4 +1,4 @@
-// function
+// function👀
 
 // //function decliration
 // function name(params) { //parameterns
@@ -35,7 +35,7 @@
 
 // console.log(userameDetails)
 
-// scope
+// scope👀
 
 // let a=30
 // function abc() {
@@ -82,6 +82,29 @@
 
 // IIF
 
-(function (no1) {
-  console.log(`IIFE ${no1}`);
-})(3);
+// (function (no1) {
+//   console.log(`IIFE ${no1}`);
+// })(3);
+
+//check empty condition👀
+
+// let str=''
+// let str1
+// let arr=[]
+// let obj ={}
+// let num=0
+
+// if (Object.keys(obj).length === 0) {
+//     console.log('true')
+// }
+
+// nullish coalescing operator"👀
+
+// const foo = null ?? 'default string';
+// console.log(foo);
+// Expected output: "default string"
+
+// var baz = 0 (??) 42;
+// console.log(baz);
+// Expected output: 0
+
