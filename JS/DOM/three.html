@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add node from js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let div= document.createElement("div")
+    div.setAttribute("class","text-node")
+    div.style.color="white"
+    div.style.background="green"
+    div.style.padding="14px"
+    let title=document.createTextNode("My Car shop ")
+    div.appendChild(title)
+    document.body.appendChild(div)
+    document.body.style.background="black"
+    console.log(div)
+</script>
+</html>
