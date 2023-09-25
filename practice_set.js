@@ -211,5 +211,107 @@ let allCandidate={"m":male,"f":female}
 
 
     
-   
+   // -------------->odd even
+// let no =2
+// function isEvenorOdd() {
+//     if (no%2==0) {
+//         return "even"
+
+//     }else{
+//         return "odd"
+//     }
+
+// }
+// let result=isEvenorOdd()
+// console.log(result)
+
+// ---------------> factorial
+
+// 6 =6*5*4*3*2*1
+// let no =6
+//     let fac
+
+//     for (let i = 2; i <6 ; i++) {
+//         return i
+//     }
+//     console.log(i)
+// }
+
+// console.log(res)
+
+//     let no=-1
+// function factorial() {
+//     let res=1
+//     if (no==0 || no==1) {
+//         return 1
+
+//     }else if(no<0){
+//         return 0
+//     }
+//     else{
+
+//         for (let i = 2; i < no+1; i++) {
+//             res=res*i
+
+//         }
+//     }
+//     return res
+// }
+// let result=factorial()
+
+// console.log(result)
+
+// let val1=5
+// let val2=8
+
+//  val2= val1+val2
+//  val1=val2-val1
+//  val2=val2-val1
+
+//  console.log(val1)
+//  console.log(val2)
+
+// Q 5. How to check the given number is Positive or Negative in JavaScript?
+// let no=4
+// function ispossative(no) {
+//     if (no>-1) {
+//         return ("positive")
+//     }else{
+
+//         return ("possative")
+//     }
+// }
+
+// let result=ispossative(no)
+
+// console.log(result)
+
+// Q 6. Write a JavaScript Program to find whether given number is Leap year or NOT?
+
+// let year=2024
+// function leapyear(year) {
+//    return (year%4==0)?"leapyear" : "not leapyear"
+
+// }
+// let res= leapyear(year)
+// console.log(res)
+
+// Q 9. Write a JavaScript Program to print the digits of a Given Number.
+
+// let digit=2345
+// function printno(number) {
+//     if (number < 10) {
+//         console.log(number);
+//       } else {
+//         printno(Math.floor(number / 10));
+//         // console.log(number % 10);
+//       }
+// }
+
+// printno(digit)
+
+
+// console.log(25%10)
+
+
     
