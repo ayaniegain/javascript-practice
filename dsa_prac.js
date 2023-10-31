@@ -91,7 +91,6 @@
 //         }
 //         return sum
 //     }
-
 // }
 // let n=6
 // let result=totalSum(n)
