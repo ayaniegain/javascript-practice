@@ -322,7 +322,6 @@ console.log(result)
 // let dd=[3,2,6,7,8,5,50]
 
 
-
 // let newarry=dd.sort((a,b)=>a-b)
 
 
