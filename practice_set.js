@@ -336,5 +336,6 @@ console.log(result)
 //     return -1
 // }
 
+
 // let res=binarySearch(7)
 // console.log(res);
