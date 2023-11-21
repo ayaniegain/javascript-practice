@@ -129,11 +129,112 @@
 
 //print 1 to 10 without loop
 
-function wtlp(n) {
-  if (n <= 10) {
-    console.log(n);
+// function wtlp(n) {
+//   if (n <= 10) {
+//     console.log(n);
 
-    wtlp(n + 1);
-  }
-}
-wtlp(1);
+//     wtlp(n + 1);
+//   }
+// }
+// wtlp(1);
+
+////////////NEW COURSE//////////😊
+
+// 1. sun of all natural no 1 to 10
+
+// let allSum=(no)=>{
+//   let sum=0
+// for (let i=1;i<=no;i++){
+//   sum+=i
+// }
+//   return sum
+// }
+// let n=5
+// let results=allSum(n)
+// console.log(results)
+
+// 2. sum of digit of number
+
+// let digi=1287=18
+
+// let digit=1111
+
+// let newdigit=digit.toString().split('');
+
+//     let val=0
+// let sum=newdigit.reduce((a,b)=>parseInt(a)+parseInt(b),val)
+
+// console.log(sum)
+
+// 3. palindrome no 
+
+// function pallen(val){
+    
+   
+//   let res1=  val.toString().split('').reverse()
+ 
+//   let res2=parseInt(res1.join('')) 
+  
+//     if(val===res2){
+//         return true 
+//     }else{
+//         return false
+//     }
+    
+// }
+// let val=122
+
+// let results=pallen(val)
+// console.log(results)
+
+// 4. fibonacci no
+
+// // program to generate fibonacci series up to a certain number
+
+// // take input from the user
+// const number = parseInt(prompt('Enter a positive number: '));
+// let n1 = 0, n2 = 1, nextTerm;
+
+// console.log('Fibonacci Series:');
+// console.log(n1); // print 0
+// console.log(n2); // print 1
+
+// nextTerm = n1 + n2;
+
+// while (nextTerm <= number) {
+
+//     // print the next term
+//     console.log(nextTerm);
+
+//     n1 = n2;
+//     n2 = nextTerm;
+//     nextTerm = n1 + n2;
+// }
+
+//find the missing no in array [2,3,4]
+
+// let arry=[1,3,4]
+    
+
+
+// function missingItem(){
+//     let arrysum=arry.reduce((a,b)=>a+b)
+  
+    
+//     let newarry=arry.sort()
+//     let lastval=newarry.pop()
+    
+//     let sum=0
+    
+//     for (let i=arry[0];i<=lastval;i++){
+        
+//        sum=sum+i
+//     }
+    
+ 
+    
+   
+//     return sum-arrysum
+// }
+// let res= missingItem()
+// console.log(res)
