@@ -35,7 +35,6 @@ console.log(result)
 
 // 7!=7*6*5*4*3*2*1
 
-
 // function fetchData() {
 //     return new Promise((resolve, reject) => {
 //       // Simulating an asynchronous operation (e.g., fetching data from a server)
@@ -48,7 +47,7 @@ console.log(result)
 //       }, 2000); // Simulating a delay of 2000 milliseconds (2 seconds)
 //     });
 //   }
-  
+
 //   // Using the promise
 //   fetchData()
 //     .then((data) => {
@@ -57,17 +56,14 @@ console.log(result)
 //     .catch((error) => {
 //       console.error('Error:', error.message);
 //     });
-  
-
 
 // value =20
-
 
 // name()
 // function name() {
 //     var value = 10
 //     console.log(value)
-    
+
 // }
 
 // function abc(a){
@@ -82,7 +78,7 @@ console.log(result)
 //     let outerVariable=10
 // function inner() {
 //     console.log("outerVariable",outerVariable)
-    
+
 // }
 // return inner
 // }
@@ -92,20 +88,19 @@ console.log(result)
 
 // function outerFunction() {
 //     let outerVariable = 10;
-  
+
 //     function innerFunction() {
 //       // The innerFunction has access to the outerVariable
 //       console.log("Outer variable:", outerVariable);
 //     }
-  
+
 //     return innerFunction;
 //   }
-  
+
 //   const closureFunction = outerFunction();
-  
+
 //   // Even after the outerFunction has completed, the closureFunction can still access the outerVariable
 //   closureFunction(); // Output: "Outer variable: 10"
-  
 
 ///promise
 
@@ -115,7 +110,7 @@ console.log(result)
 //         }
 //         else{
 //             return rej()
-            
+
 //     }
 // })
 
@@ -124,7 +119,7 @@ console.log(result)
 // })
 // ans.catch(()=>{
 //     console.log("rejected")
-    
+
 // })
 
 //fetch
@@ -152,47 +147,47 @@ console.log(result)
 
 //find the exact output 👀
 
-let x = [                                         
-    {name: 'a', gender: 'm'},         
-    {name: 'b', gender: 'm'},         
-    {name: 'c', gender: 'f'},         
-    {name: 'd', gender: 'm'},         
-    {name: 'e', gender: 'f'}         
-    ];
+let x = [
+  { name: "a", gender: "m" },
+  { name: "b", gender: "m" },
+  { name: "c", gender: "f" },
+  { name: "d", gender: "m" },
+  { name: "e", gender: "f" },
+];
 
-    let male=[]
-    let female=[]
+let male = [];
+let female = [];
 
-   x.filter((e)=>{
-          if (e["gender"]=="m") {
-              male.push(e)
-          }
-          if (e["gender"]=="f") {
-            female.push(e)
-        }
-    })
+x.filter((e) => {
+  if (e["gender"] == "m") {
+    male.push(e);
+  }
+  if (e["gender"] == "f") {
+    female.push(e);
+  }
+});
 
-let allCandidate={"m":male,"f":female}
+let allCandidate = { m: male, f: female };
 
-    // let maleCan=Object.assign(male)
-    // let femaleCan=Object.assign(female)
-    // console.log(allCandidate)
+// let maleCan=Object.assign(male)
+// let femaleCan=Object.assign(female)
+// console.log(allCandidate)
 
-    // console.log(male)
-    // console.log(female)
-    
-    // Group the data based on the “gender” field using ES-6.
-    // Expected Output: {
-    // “m”: [
-    // {name: “a”, gender: “m”},
-    // {name: “b”, gender: “m”},
-    // {name: “d”, gender: “m”}
-    // ],
-    // “f”: [
-    // {name: “c”, gender: “f”},
-    // {name: “e”, gender: “f”}
-    // ]
-    // }
+// console.log(male)
+// console.log(female)
+
+// Group the data based on the “gender” field using ES-6.
+// Expected Output: {
+// “m”: [
+// {name: “a”, gender: “m”},
+// {name: “b”, gender: “m”},
+// {name: “d”, gender: “m”}
+// ],
+// “f”: [
+// {name: “c”, gender: “f”},
+// {name: “e”, gender: “f”}
+// ]
+// }
 
 // swap array value in perticular possition 👀
 
@@ -209,9 +204,7 @@ let allCandidate={"m":male,"f":female}
 // console.log(a)
 // console.log(b)
 
-
-    
-   // -------------->odd even
+// -------------->odd even
 // let no =2
 // function isEvenorOdd() {
 //     if (no%2==0) {
@@ -310,8 +303,93 @@ let allCandidate={"m":male,"f":female}
 
 // printno(digit)
 
-
 // console.log(25%10)
 
+//element is present in array or not
 
-    
+// let arry=[12,4,5,22,67,19]
+// let findval=67
+// let res=arry.find((e)=>e==findval)
+// console.log(res);
+
+// console.log(arry.includes(67));
+
+//✌ find the index of a no i array
+
+// let arry=[12,"hello",'45','9i',6]
+
+// function checkIndx(arry,target){
+//     for (let i=0;i<arry.length;i++){
+//         // return arry[i]
+//         if(arry[i]===target){
+//             return i
+//         }
+
+//         }
+
+//             return -1
+
+// }
+// let res=checkIndx(arry,'hello')
+
+// console.log(res)
+
+//✌ array add element to different position --> array.splice
+//✌ array add element to last position --> array.push
+//✌ array add element to first position --> array.unshift
+
+// let arry=[12,"hello",'45','9i',6]
+
+// function addelm(arry,target){
+
+//     // arry.splice(1,0,"target")
+//    return arry.slice(1,4)
+
+//     // let newval=
+
+// //  return newval
+
+// }
+// let res=addelm(arry,'yes')
+
+// console.log(res)
+// // console.log(
+
+//     arry.slice(-2)
+//     )
+
+// console.log(arry)
+
+// shallow copy
+
+// let arry1 = [1, 2, 3, 4, 5];
+
+// arry1.splice(1, 0, "2u");
+
+// console.log(arry1);
+
+// //deep copy
+// let xx = [...arry1, 22];
+// console.log(xx);
+
+// ✌ is two arry is equal or not
+
+let arry1 = [1, 2, 3, 4];
+let arry2 = [1, 2, 3, 4];
+
+let isequalArry = (arry1, arry2) => {
+  if (arry1.length !== arry2.length) {
+    return false;
+  }
+
+  for (let i = 0; i < arry1.length; i++) {
+    if (arry1[i] === arry2[i]) {
+      return true;
+    }
+  }
+  return false;
+};
+
+let res = isequalArry(arry1, arry2);
+
+console.log(res);
