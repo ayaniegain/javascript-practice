@@ -238,3 +238,141 @@
 // let res= missingItem()
 // console.log(res)
 
+
+// ✌Q 5. How to check the given number is Positive or Negative in JavaScript?
+// let no=4
+// function ispossative(no) {
+//     if (no>-1) {
+//         return ("positive")
+//     }else{
+
+//         return ("possative")
+//     }
+// }
+
+// let result=ispossative(no)
+
+// console.log(result)
+
+// Q 6. Write a JavaScript Program to find whether given number is Leap year or NOT?
+
+// let year=2024
+// function leapyear(year) {
+//    return (year%4==0)?"leapyear" : "not leapyear"
+
+// }
+// let res= leapyear(year)
+// console.log(res)
+
+//✌ Q 9. Write a JavaScript Program to print the digits of a Given Number.
+
+// let digit=2345
+// function printno(number) {
+//     if (number < 10) {
+//         console.log(number);
+//       } else {
+//         printno(Math.floor(number / 10));
+//         // console.log(number % 10);
+//       }
+// }
+
+// printno(digit)
+
+// console.log(25%10)
+
+//element is present in array or not
+
+// let arry=[12,4,5,22,67,19]
+// let findval=67
+// let res=arry.find((e)=>e==findval)
+// console.log(res);
+
+// console.log(arry.includes(67));
+
+//✌ find the index of a no i array
+
+// let arry=[12,"hello",'45','9i',6]
+
+// function checkIndx(arry,target){
+//     for (let i=0;i<arry.length;i++){
+//         // return arry[i]
+//         if(arry[i]===target){
+//             return i
+//         }
+
+//         }
+
+//             return -1
+
+// }
+// let res=checkIndx(arry,'hello')
+
+// console.log(res)
+
+//✌ array add element to different position --> array.splice
+//✌ array add element to last position --> array.push
+//✌ array add element to first position --> array.unshift
+
+// let arry=[12,"hello",'45','9i',6]
+
+// function addelm(arry,target){
+
+//     // arry.splice(1,0,"target")
+//    return arry.slice(1,4)
+
+//     // let newval=
+
+// //  return newval
+
+// }
+// let res=addelm(arry,'yes')
+
+// console.log(res)
+// // console.log(
+
+//     arry.slice(-2)
+//     )
+
+// console.log(arry)
+
+// shallow copy
+
+// let arry1 = [1, 2, 3, 4, 5];
+
+// arry1.splice(1, 0, "2u");
+
+// console.log(arry1);
+
+// //deep copy
+// let xx = [...arry1, 22];
+// console.log(xx);
+
+// ✌ is two arry is equal or not
+
+// let arry1 = [1, 2, 3, 4];
+// let arry2 = [1, 2, 3, 4];
+
+// let isequalArry = (arry1, arry2) => {
+//   if (arry1.length !== arry2.length) {
+//     return false;
+//   }
+
+//   for (let i = 0; i < arry1.length; i++) {
+//     if (arry1[i] === arry2[i]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// };
+
+// let res = isequalArry(arry1, arry2);
+
+// console.log(res);
+
+// 2nd sol
+
+
+// let cc=  arry1.every((elm,i)=>arry1[i]===arry2[i])
+
+// console.log(cc
+// );
