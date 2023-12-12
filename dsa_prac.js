@@ -376,3 +376,66 @@
 
 // console.log(cc
 // );
+
+
+//anagram👍
+
+let str='anagram';
+let str2="nagaram"
+
+
+
+function isAnagram(s1,s2) {
+    return s1.split('').sort().join("")== s2.split('').sort().join("")
+    
+}
+let val=isAnagram(str,str2)
+
+// console.log(val);
+
+
+let angArray=['bat',"tab","atb","bbc","cab"]
+let first =angArray[0]
+
+
+let cx=angArray.filter((e)=>e)
+
+// console.log(cx);
+
+
+// function anagm() {
+
+//     for (const i of angArray) {
+
+//         return first.split('').sort().join("") == i.split('').sort().join("")
+        
+//     }
+
+
+    
+// }
+// let cc=anagm()
+
+// console.log(cc);
+
+// longest common Prefix 👍
+
+let strs=["flowers","flow","flight"]
+var longestCommonPrefix = function (strs) {
+    // Return early on empty input
+    if (!strs.length) return '';
+
+    // Loop through the letters of the first word
+    for (let i = 0; i <= strs[0].length; i++) {
+        // Check if this character is present in the same position of every string
+        if (!strs.every((string) => string[i] === strs[0][i])) {
+            // If not, return the string up to and including the previous character
+            return strs[0]
+        }
+    }
+
+    return strs[0];
+};
+
+let res=longestCommonPrefix(strs)
+console.log(res);

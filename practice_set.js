@@ -285,3 +285,17 @@ console.log(result)
 
 // console.log(res)
 
+// -----------------anil siddhu Js Interview😍
+
+// let ss=['a',"b","c"]
+
+// let [xx]=ss
+
+// console.log(xx);
+
+// let val1={name:"Ayan",age:28}
+// let val2={name2:"Ayan1",age2:18}
+
+// let newArray={...val1, ...val2}
+// console.log(newArray);
+
