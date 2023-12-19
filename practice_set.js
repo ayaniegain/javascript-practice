@@ -299,3 +299,43 @@ console.log(result)
 // let newArray={...val1, ...val2}
 // console.log(newArray);
 
+//linear search👍
+
+// let arry=[2,4,5,6,7,20]
+
+// function lenSerch(val) {
+//     for (const i of arry) {
+
+//         if (i==val) {
+//             return arry.indexOf(i)
+            
+//         }
+//     }
+//     return -1
+// }
+
+// let res=lenSerch(7)
+// console.log(res);
+
+//sort the array
+
+// let dd=[3,2,6,7,8,5,50]
+
+
+
+// let newarry=dd.sort((a,b)=>a-b)
+
+
+// function binarySearch(val) {
+//     for (const i of newarry) {
+
+//         if (i==val) {
+//             return newarry.indexOf(i)
+            
+//         }
+//     }
+//     return -1
+// }
+
+// let res=binarySearch(7)
+// console.log(res);

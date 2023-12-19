@@ -420,22 +420,55 @@ let cx=angArray.filter((e)=>e)
 
 // longest common Prefix 👍
 
-let strs=["flowers","flow","flight"]
-var longestCommonPrefix = function (strs) {
-    // Return early on empty input
-    if (!strs.length) return '';
+// let strs=["flowers","flow","flight"]
+// var longestCommonPrefix = function (strs) {
+//     // Return early on empty input
+//     if (!strs.length) return '';
 
-    // Loop through the letters of the first word
-    for (let i = 0; i <= strs[0].length; i++) {
-        // Check if this character is present in the same position of every string
-        if (!strs.every((string) => string[i] === strs[0][i])) {
-            // If not, return the string up to and including the previous character
-            return strs[0]
-        }
-    }
+//     // Loop through the letters of the first word
+//     for (let i = 0; i <= strs[0].length; i++) {
+//         // Check if this character is present in the same position of every string
+//         if (!strs.every((string) => string[i] === strs[0][i])) {
+//             // If not, return the string up to and including the previous character
+//             return strs[0]
+//         }
+//     }
 
-    return strs[0];
-};
+//     return strs[0];
+// };
 
-let res=longestCommonPrefix(strs)
+// let res=longestCommonPrefix(strs)
+// console.log(res);
+
+// DSA 😊
+
+//BIG-O for worst case 
+//Omega for best case
+//Theta for average case
+
+// Object time complexity always O(1) //Insert,Access, Remove
+
+// Search, Object-keys,values,entries is O(n)
+
+
+
+
+let fibbo =(n)=>{
+let a=0;
+let b=1;
+let ss
+
+for (let  i= 1;  i< n; i++) {
+    console.log(a);
+
+    ss= a+b
+    a=b
+    b=ss
+
+}
+
+}
+
+let res=fibbo(6)
+
 console.log(res);
