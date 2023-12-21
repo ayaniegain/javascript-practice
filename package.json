@@ -5,7 +5,7 @@
   "main": "dsa_prac.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon JS_concept.js"
+    "start": "nodemon dsa_prac.js"
   },
   "keywords": [],
   "author": "",

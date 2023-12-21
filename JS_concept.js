@@ -123,125 +123,208 @@
 
 // class
 
+// hoisting
 
+// 👍 when any of the function and value move top of their exection scopre during compailization phase, basically var and normal function can be hoisted , and function declaration and let can;t .
 
+// b=34
 
+// console.log(b);
 
+// var b
 
+// HoistFunc()
+// function HoistFunc() {
+//     console.log(110);
+// }
 
+//closure
 
+// 👍A closure is the combination of a function and the lexical environment, when innerfunction access the outer function value even the outer function has finished their exection its call closure
 
+// function Outer(){
+// let value= 20
+//     function Inner() {
 
+//         let value =10
 
+//         console.log(value);
+        
+//     }
+//     return Inner
 
+// }
 
+// let result= Outer()
+// result()
 
+// Event loop
+// the event loop is the mechanisam of the asyncronus operation , whic check the non bloxking code in the event queue whether its free of not <div className="
 
 
 
+// let myPromise= new Promise((resolved,reject)=>{
 
+//     let toggle =false
 
+//     if (toggle) {
+//         resolved("slidebar toggle ")
+//     }else{
+//         reject("slidebar does't toggle ")
 
+//     }
 
+// })
+// myPromise.then((data)=>console.log(data)).catch((error)=>console.log(error))
 
 
 
+// let url ="https://randomuser.me/api/"
 
+// let MyPromise= new Promise((resolve,reject)=>{
+      
+//     fetch(url)
+//       .then(response => {
+//         // Check if the response status is ok (status code 200-299)
+//         if (!response.ok) {
+//           throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+//         // Parse the response as JSON
+//         return response.json();
+//       })
+//       .then(data => {
+//         // Resolve the promise with the JSON data
+//         resolve(data);
+//       })
+//       .catch(error => {
+//         // Reject the promise with the error
+//         reject(error);
+//       });
+// })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class Person {
-
-    constructor(name,age) {
-
-        this.name=name;
-        this.age=age
-
-    }
-
-    canrun(){
-        console.log(`hello  i am ${this.name} my age is ${this.age}`);
-    }
- 
+// MyPromise.then((data)=>{
+//     console.log(data);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+// arrow vs normal function  👍 this and new keyword
+function hello(){
+    // console.log(this);
 }
+hello()
 
-let value1= new Person("ayan",23)
+let  hello1=()=>{
+    console.log(this);
+}
+hello1()
 
-value1.canrun()
 
-console.log(value1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Person {
+
+//     constructor(name,age) {
+
+//         this.name=name;
+//         this.age=age
+
+//     }
+
+//     canrun(){
+//         console.log(`hello  i am ${this.name} my age is ${this.age}`);
+//     }
+ 
+// }
+
+// let value1= new Person("ayan",23)
+
+// value1.canrun()
+
+// console.log(value1);

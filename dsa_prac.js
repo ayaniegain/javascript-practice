@@ -380,25 +380,25 @@
 
 //anagram👍
 
-let str='anagram';
-let str2="nagaram"
+// let str='anagram';
+// let str2="nagaram"
 
 
 
-function isAnagram(s1,s2) {
-    return s1.split('').sort().join("")== s2.split('').sort().join("")
+// function isAnagram(s1,s2) {
+//     return s1.split('').sort().join("")== s2.split('').sort().join("")
     
-}
-let val=isAnagram(str,str2)
+// }
+// let val=isAnagram(str,str2)
 
-// console.log(val);
-
-
-let angArray=['bat',"tab","atb","bbc","cab"]
-let first =angArray[0]
+// // console.log(val);
 
 
-let cx=angArray.filter((e)=>e)
+// let angArray=['bat',"tab","atb","bbc","cab"]
+// let first =angArray[0]
+
+
+// let cx=angArray.filter((e)=>e)
 
 // console.log(cx);
 
@@ -453,22 +453,66 @@ let cx=angArray.filter((e)=>e)
 
 
 
-let fibbo =(n)=>{
-let a=0;
-let b=1;
-let ss
+// let fibbo =(n)=>{
+// let a=0;
+// let b=1;
+// let ss
 
-for (let  i= 1;  i< n; i++) {
-    console.log(a);
+// for (let  i= 1;  i< n; i++) {
+//     console.log(a);
 
-    ss= a+b
-    a=b
-    b=ss
+//     ss= a+b
+//     a=b
+//     b=ss
 
-}
+// }
 
-}
+// }
 
-let res=fibbo(6)
+// let res=fibbo(6)
 
-console.log(res);
+// console.log(res);
+
+
+// --------------------------DSA---------------------------❤️❤️
+
+// asymptotic Analysis
+
+// let n=6
+
+// let val=n*(n+1)/2
+// console.log(val);
+
+
+// let sum=0
+
+// for (let i = 0; i <= n; i++) {
+//     sum=sum+i
+    
+// }
+
+// console.log(sum);
+// let sum =0
+// for (let i = 1; i <= n; i++) {
+//    for (let j = 1; j <=i; j++) {
+//  sum++
+//    }
+    
+// }
+// console.log(sum);
+
+// 👍----order of growth
+// c<loglogN< logN < n1/3 <n1/2< n<n2<n3<n4<2n<nN
+
+/*
+if g(n)>f(n) =bad algo
+
+
+*/
+
+// 👍---------ALL notation
+/*
+Big(O) =>exact and upper bound , its covers all so worse case
+Theta() =>exact  , its covers average case.
+Omega() =>exact and lower bound , basically constant, best case but not usefull.
+*/
