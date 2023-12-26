@@ -209,15 +209,15 @@
 //     console.log(err);
 // })
 // arrow vs normal function  👍 this and new keyword
-function hello(){
-    // console.log(this);
-}
-hello()
+// function hello(){
+//     // console.log(this);
+// }
+// hello()
 
-let  hello1=()=>{
-    console.log(this);
-}
-hello1()
+// let  hello1=()=>{
+//     console.log(this);
+// }
+// hello1()
 
 
 
