@@ -516,3 +516,4 @@ Big(O) =>exact and upper bound , its covers all so worse case
 Theta() =>exact  , its covers average case.
 Omega() =>exact and lower bound , basically constant, best case but not usefull.
 */
+

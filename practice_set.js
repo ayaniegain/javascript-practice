@@ -266,16 +266,14 @@ console.log(result)
 
 //find the smellest number in array 👏
 
-
 // let arry=[1,24,3,48,99]
-
 
 // let smallestArray=(arry)=>{
 // let small=arry[0]
 //     for(let i=0;i<arry.length;i++){
 //        if(small>arry[i]){
 //            small=arry[i]
-           
+
 //        }
 //     }
 //    return small
@@ -308,7 +306,7 @@ console.log(result)
 
 //         if (i==val) {
 //             return arry.indexOf(i)
-            
+
 //         }
 //     }
 //     return -1
@@ -321,23 +319,93 @@ console.log(result)
 
 // let dd=[3,2,6,7,8,5,50]
 
-
-
 // let newarry=dd.sort((a,b)=>a-b)
-
 
 // function binarySearch(val) {
 //     for (const i of newarry) {
 
 //         if (i==val) {
 //             return newarry.indexOf(i)
-            
+
 //         }
 //     }
 //     return -1
 // }
 
-
-
 // let res=binarySearch(7)
+// console.log(res);
+
+//  check given string in pallendrome or not 😊
+
+// let str= "mom"
+
+// function ispallen(params) {
+
+//     let newstr=str.split("").reverse().join("")
+//     if (str==newstr) {
+
+//         return true
+
+//     }
+//     else{
+//         return false
+//     }
+// }
+// let result=ispallen()
+
+// console.log(result);
+
+// Count number of vowels, consonants, spaces in String 😊
+
+// let mystr = "number of vowels";
+
+// let includevowel = 0;
+// let includeconso = 0;
+// let includespace = 0;
+
+// function countWord() {
+//   let val = mystr.split("");
+
+// for (let i = 0;  i< val.length; i ++) {
+    
+    
+//     // newStr.map((val) => {
+//         if (val[i] == "a" || val[i] == "e" || val[i] == "i" || val[i] == "o" || val[i] == "u") {
+//             includevowel++;
+//         } else if ((val[i] >= "b" && val[i] <= "z")) {
+//             includeconso++;
+//         } else if(val[i]  !== ""){
+//             includespace++;
+//         }
+    
+//     // });
+// }
+// }
+
+// countWord();
+
+// console.log(includevowel);
+// console.log(includeconso);
+// console.log(includespace);
+
+
+// remove all vowel from chaarcter😊
+
+// let mystr = "number of vowels";
+
+
+// function removeVowel() {
+
+//   let newstr=  mystr.split('')
+
+
+//   let cc= newstr.filter((e)=>(e!== "a" && e!== "e" && e!== "i" && e!== "o" && e!== "u") )
+//   return cc.join('')
+
+//         }
+
+    
+
+// let res=removeVowel()
+
 // console.log(res);
