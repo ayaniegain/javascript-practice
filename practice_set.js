@@ -1,5 +1,7 @@
 // // small possitive missing number 👀
 
+const { on } = require("nodemon")
+
 // let Arr= [7,-4,3,1,2,6,9,-3]
 // function smallposMisstingNo(array) {
 //     const numbersSet = new Set(array);
@@ -413,22 +415,40 @@ console.log(result)
 // Remove characters from a string except alphabets😊
 
 
-function nonChar() {
+// function nonChar() {
     
-    let line=" hello this is @123&"
+//     let mystring=" hello this is @123&"
 
-// let newstr= line.split("")
+//     let onlyString=''
 
-// console.log(newstr);
+//     for (let i = 0; i < mystring.length; i++) {
+//             let char= mystring[i]
 
 
-for (let i = 0; i < line.length; i++) {
-    // if (typeOf(newstr[i])!=="string") {
-        console.log(typeof line[i])
-    // }
-}
-}
+//             if (char>="a" && char<="z") {
+//                 onlyString=char+onlyString
+                
+//             }
+            
+//     }
 
-let res= nonChar()
+// return onlyString
+
+
+// }
+
+// let res= nonChar()
 
 // console.log(res);
+
+// 1) How to find the maximum occurring character in a given String? 👍
+
+let mystr=" hello Ayan Biswas";
+
+
+
+for (let i = 0; i < mystr.length; i++) {
+
+    
+
+}

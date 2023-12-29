@@ -79,7 +79,6 @@
 
 //sum of Nth
 
-
 // function totalSum(n) {
 //     if (n==1) {
 //         return 1
@@ -166,21 +165,20 @@
 
 // console.log(sum)
 
-// 3. palindrome no 
+// 3. palindrome no
 
 // function pallen(val){
-    
-   
+
 //   let res1=  val.toString().split('').reverse()
- 
-//   let res2=parseInt(res1.join('')) 
-  
+
+//   let res2=parseInt(res1.join(''))
+
 //     if(val===res2){
-//         return true 
+//         return true
 //     }else{
 //         return false
 //     }
-    
+
 // }
 // let val=122
 
@@ -214,30 +212,24 @@
 //find the missing no in array [2,3,4]
 
 // let arry=[1,3,4]
-    
-
 
 // function missingItem(){
 //     let arrysum=arry.reduce((a,b)=>a+b)
-  
-    
+
 //     let newarry=arry.sort()
 //     let lastval=newarry.pop()
-    
+
 //     let sum=0
-    
+
 //     for (let i=arry[0];i<=lastval;i++){
-        
+
 //        sum=sum+i
 //     }
-    
 
-   
 //     return sum-arrysum
 // }
 // let res= missingItem()
 // console.log(res)
-
 
 // ✌Q 5. How to check the given number is Positive or Negative in JavaScript?
 // let no=4
@@ -371,48 +363,39 @@
 
 // 2nd sol
 
-
 // let cc=  arry1.every((elm,i)=>arry1[i]===arry2[i])
 
 // console.log(cc
 // );
-
 
 //anagram👍
 
 // let str='anagram';
 // let str2="nagaram"
 
-
-
 // function isAnagram(s1,s2) {
 //     return s1.split('').sort().join("")== s2.split('').sort().join("")
-    
+
 // }
 // let val=isAnagram(str,str2)
 
 // // console.log(val);
 
-
 // let angArray=['bat',"tab","atb","bbc","cab"]
 // let first =angArray[0]
-
 
 // let cx=angArray.filter((e)=>e)
 
 // console.log(cx);
-
 
 // function anagm() {
 
 //     for (const i of angArray) {
 
 //         return first.split('').sort().join("") == i.split('').sort().join("")
-        
+
 //     }
 
-
-    
 // }
 // let cc=anagm()
 
@@ -442,16 +425,13 @@
 
 // DSA 😊
 
-//BIG-O for worst case 
+//BIG-O for worst case
 //Omega for best case
 //Theta for average case
 
 // Object time complexity always O(1) //Insert,Access, Remove
 
 // Search, Object-keys,values,entries is O(n)
-
-
-
 
 // let fibbo =(n)=>{
 // let a=0;
@@ -473,7 +453,6 @@
 
 // console.log(res);
 
-
 // --------------------------DSA---------------------------❤️❤️
 
 // asymptotic Analysis
@@ -483,12 +462,11 @@
 // let val=n*(n+1)/2
 // console.log(val);
 
-
 // let sum=0
 
 // for (let i = 0; i <= n; i++) {
 //     sum=sum+i
-    
+
 // }
 
 // console.log(sum);
@@ -497,7 +475,7 @@
 //    for (let j = 1; j <=i; j++) {
 //  sum++
 //    }
-    
+
 // }
 // console.log(sum);
 
@@ -517,24 +495,18 @@ Theta() =>exact  , its covers average case.
 Omega() =>exact and lower bound , basically constant, best case but not usefull.
 */
 
-
 // count degit of an integer👍
-
-
 
 // let count =0
 // function countlength() {
 //     let val=3456;
-    
-
 
 // while (val>0) {
-    
-    
+
 //     val=  Math.floor(val/10)
-    
+
 //     count++
-    
+
 // }}
 
 // countlength()
@@ -547,11 +519,39 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 // function pallendno() {
 
 //     let xx= val.toString().split('').reverse().join("")
-    
+
 //     return xx
 
-    
 // }
 
 // let res=pallendno()
+// console.log(res);
+
+
+// function palendrom(n) {
+
+//     let res;
+//     let sum=0;
+//     let temp=n;
+
+//     while (temp>0) {
+//         res=temp%10;
+//         sum=sum*10+res;
+//         temp=Math.floor(temp/10);
+//     }
+
+//     if (sum==n) {
+//         return "palendrome"
+//     }else{
+//         return "Not palendrome"
+
+//     }
+    
+// }
+
+
+// let n=121;
+
+// let res= palendrom(n);
+
 // console.log(res);
