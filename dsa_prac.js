@@ -517,3 +517,41 @@ Theta() =>exact  , its covers average case.
 Omega() =>exact and lower bound , basically constant, best case but not usefull.
 */
 
+
+// count degit of an integer👍
+
+
+
+// let count =0
+// function countlength() {
+//     let val=3456;
+    
+
+
+// while (val>0) {
+    
+    
+//     val=  Math.floor(val/10)
+    
+//     count++
+    
+// }}
+
+// countlength()
+
+// console.log(count);
+
+// pallendrome no 👍
+// let val=121
+
+// function pallendno() {
+
+//     let xx= val.toString().split('').reverse().join("")
+    
+//     return xx
+
+    
+// }
+
+// let res=pallendno()
+// console.log(res);

@@ -409,3 +409,26 @@ console.log(result)
 // let res=removeVowel()
 
 // console.log(res);
+
+// Remove characters from a string except alphabets😊
+
+
+function nonChar() {
+    
+    let line=" hello this is @123&"
+
+// let newstr= line.split("")
+
+// console.log(newstr);
+
+
+for (let i = 0; i < line.length; i++) {
+    // if (typeOf(newstr[i])!=="string") {
+        console.log(typeof line[i])
+    // }
+}
+}
+
+let res= nonChar()
+
+// console.log(res);
