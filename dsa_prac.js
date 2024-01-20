@@ -527,7 +527,6 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 // let res=pallendno()
 // console.log(res);
 
-
 // function palendrom(n) {
 
 //     let res;
@@ -546,9 +545,8 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 //         return "Not palendrome"
 
 //     }
-    
-// }
 
+// }
 
 // let n=121;
 
@@ -556,4 +554,31 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 
 // console.log(res);
 
+// let ispallendrome = () => {
+//   let pallen = 431;
 
+//   let rem;
+//   let temp = pallen;
+//   let sum = 0;
+
+//   while (temp > 0) {
+//     rem = temp % 10; // 4,3,4
+
+//     sum = sum * 10 + rem; //
+
+//     temp = Math.floor(temp / 10);
+//   }
+
+//   if (pallen === sum) {
+//     return "its pallen";
+//   } else {
+//     return "its not pallen";
+//   }
+// };
+
+// let result = ispallendrome();
+
+// console.log(result);
+
+
+//reccursion 👍
