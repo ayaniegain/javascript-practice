@@ -582,3 +582,36 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 
 
 //reccursion 👍
+
+// function fun(n){
+    
+    
+//     if (n===0) return ;
+    
+//     fun(n-1)
+//     console.log(n);
+//     fun(n-1)
+// }
+
+
+// fun(3)
+
+
+// function recc(n) {
+
+//     if (n==0) {
+//         return;
+//     }
+
+
+//     recc(n-1)
+//     console.log(n);
+    
+// }
+
+// recc(5)
+
+// using reccursion check string is palindrome or not👍
+
+
+
