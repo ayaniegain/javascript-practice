@@ -580,22 +580,18 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 
 // console.log(result);
 
-
 //reccursion 👍
 
 // function fun(n){
-    
-    
+
 //     if (n===0) return ;
-    
+
 //     fun(n-1)
 //     console.log(n);
 //     fun(n-1)
 // }
 
-
 // fun(3)
-
 
 // function recc(n) {
 
@@ -603,15 +599,175 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 //         return;
 //     }
 
-
 //     recc(n-1)
 //     console.log(n);
-    
+//     recc(n-1)
+
 // }
 
 // recc(5)
 
-// using reccursion check string is palindrome or not👍
+// let arr=[10,20,35,45]
+// arr[5]=55
 
+// console.log(arr);
 
+// array is sorted or not 👍
 
+// let arr = [23, 44, 63, 78.88];
+// function arrySorted() {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < arr[i - 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// let results = arrySorted();
+
+// console.log(results);
+
+// reverse the array👍
+
+// let arr=[10,56,45,11,90]
+
+// function revarry(n) {
+//     let emparry=[];
+
+//     for (let i = arr.length-1; i > 0; i--) {
+//         emparry.push( arr[i])
+
+//     }
+
+//     return emparry
+
+// }
+
+// let res=revarry(arr)
+
+// console.log(res);
+
+// 2/ reverse the arry 👍
+// function revarray() {
+//     let array=[23,55,6,7,11]
+//     let low=0
+//     let high= array.length-1
+
+//     while (low<high) {
+//         [array[low],array[high]]=[array[high],array[low]]
+
+//         low++
+//         high--
+
+//     }
+//     return array
+
+// }
+// let res=revarray()
+// console.log(res);
+
+// move all zero to last of the array👍
+
+// function endzero(arr,num) {
+
+//     let first=[]
+//     let second=[]
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]!==num) {
+//             first.push(arr[i])
+//         }
+//         if (arr[i]==num) {
+//             second.push(arr[i])
+//         }
+
+//     }
+
+//     let newArray=[...first,...second]
+//     return newArray
+
+// }
+// let arry=[2,9,0,2,6,8,2,5,7,2,4,0,3,8,0,45]
+// let res=endzero(arry,2)
+
+// console.log(res);
+// move all zero to last of the array👍
+
+// function zerolast(arry) {
+//   for (let i = 0; i < arry.length; i++) {
+//     if (arry[i] == 0) {
+//       for (let j = i + 1; j < arry.length; j++) {
+//         if (arry[j] !== 0) {
+//         [arry[i],arry[j]]=[arry[j],arry[i]]
+//             break;
+//         }
+
+//       }
+//     }
+//   }
+
+//   console.log(arry);
+// }
+// let arry = [2, 9,0, 0, 3, 8, 0, 45];
+
+// zerolast(arry);
+
+// move all zero to last of the array👍
+
+// function zerolast(arry) {
+
+//     let count=0;
+//   for (let i = 0; i < arry.length; i++) {
+//     if (arry[i] !== 0) {
+
+//         [arry[i],arry[count]]=[arry[count],arry[i]]
+
+//         count++
+
+//       }
+//     }
+//     console.log(arry);
+//   }
+
+// let arry = [2, 9,0, 0, 3, 8, 0, 45];
+
+// zerolast(arry);
+
+// let arry = [10, 20, 30,77];
+
+// function zerolast(arry) {
+//   let x = arry[0];
+
+//   for (let i = 1; i < arry.length; i++) {
+//     arry[i - 1] = arry[i];
+
+//     arry[ arry.length - 1] = x;
+//   }
+//   return (arry);
+// }
+
+// let res=zerolast(arry);
+// console.log(res);
+
+// serach the item in array using binary search approach 👍
+
+let arry = [10, 20, 30, 40, 50, 60, 70];
+let findElm = 40;
+function searchInd() {
+  let low = 0;
+  let high = arry.length - 1;
+  let mid;
+  while (low <= high) {
+   mid = (Math.floor(low + high) / 2)
+    if (arry[mid] == findElm) return mid;
+
+    if (arry[mid] > findElm) high = mid - 1;
+    else low = mid + 1;
+  }
+  return -1;
+}
+
+let res = searchInd();
+
+console.log(res);
