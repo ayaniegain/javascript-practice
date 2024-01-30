@@ -1,6 +1,6 @@
 // // small possitive missing number 👀
 
-const { on } = require("nodemon")
+const { on } = require("nodemon");
 
 // let Arr= [7,-4,3,1,2,6,9,-3]
 // function smallposMisstingNo(array) {
@@ -369,8 +369,7 @@ console.log(result)
 //   let val = mystr.split("");
 
 // for (let i = 0;  i< val.length; i ++) {
-    
-    
+
 //     // newStr.map((val) => {
 //         if (val[i] == "a" || val[i] == "e" || val[i] == "i" || val[i] == "o" || val[i] == "u") {
 //             includevowel++;
@@ -379,7 +378,7 @@ console.log(result)
 //         } else if(val[i]  !== ""){
 //             includespace++;
 //         }
-    
+
 //     // });
 // }
 // }
@@ -390,23 +389,18 @@ console.log(result)
 // console.log(includeconso);
 // console.log(includespace);
 
-
 // remove all vowel from chaarcter😊
 
 // let mystr = "number of vowels";
-
 
 // function removeVowel() {
 
 //   let newstr=  mystr.split('')
 
-
 //   let cc= newstr.filter((e)=>(e!== "a" && e!== "e" && e!== "i" && e!== "o" && e!== "u") )
 //   return cc.join('')
 
 //         }
-
-    
 
 // let res=removeVowel()
 
@@ -414,9 +408,8 @@ console.log(result)
 
 // Remove characters from a string except alphabets😊
 
-
 // function nonChar() {
-    
+
 //     let mystring=" hello this is @123&"
 
 //     let onlyString=''
@@ -424,16 +417,14 @@ console.log(result)
 //     for (let i = 0; i < mystring.length; i++) {
 //             let char= mystring[i]
 
-
 //             if (char>="a" && char<="z") {
 //                 onlyString=char+onlyString
-                
+
 //             }
-            
+
 //     }
 
 // return onlyString
-
 
 // }
 
@@ -442,7 +433,4 @@ console.log(result)
 // console.log(res);
 
 // 1) How to find the maximum occurring character in a given String? 👍
-
-
-
 
