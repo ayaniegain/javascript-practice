@@ -752,22 +752,89 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 
 // serach the item in array using binary search approach 👍
 
-let arry = [10, 20, 30, 40, 50, 60, 70];
-let findElm = 40;
-function searchInd() {
-  let low = 0;
-  let high = arry.length - 1;
-  let mid;
-  while (low <= high) {
-   mid = (Math.floor(low + high) / 2)
-    if (arry[mid] == findElm) return mid;
+// let arry = [10, 20, 30, 40, 50, 60, 70];
+// let findElm = 40;
+// function searchInd() {
+//   let low = 0;
+//   let high = arry.length - 1;
+//   let mid;
+//   while (low <= high) {
+//    mid = (Math.floor(low + high) / 2)
+//     if (arry[mid] == findElm) return mid;
 
-    if (arry[mid] > findElm) high = mid - 1;
-    else low = mid + 1;
-  }
-  return -1;
-}
+//     if (arry[mid] > findElm) high = mid - 1;
+//     else low = mid + 1;
+//   }
+//   return -1;
+// }
 
-let res = searchInd();
+// let res = searchInd();
 
-console.log(res);
+// console.log(res);
+// linier search 👍
+
+// function findAnum(arr, no) {
+//   let results=[]
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == no) {
+//       results.push(i);
+//     }
+//   }
+
+//  return results.length!==0 ?  results :  -1
+
+// }
+// let arr = [23, 44, 56, 77,,23, 2, 1, 7, 8,23];
+// console.log(findAnum(arr, no=23));
+
+// given an array of positive integer sorted in a increasing order and an integer k.👍
+
+// let array=[2,3,4,7,11] //15689
+// let k=5
+
+// function findKelm(arr,k) {
+
+//     let count=0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//        if (array[i]<count+k) {
+//             count++
+//        }        
+//     }
+
+//     return count+k
+  
+// }
+
+// console.log(findKelm(array,k))
+
+
+// function binarySearch(arr,target) {
+
+//     let min=0
+//     let max=arr.length-1
+    
+//     while (min<=max) {
+//         let mid=(Math.floor((min+max)/2))
+//         if (arr[mid]==target) {
+//             return mid
+//         }
+//        else if (arr[mid]<target) {
+//             min =mid+1
+//         }else {
+//             max= mid-1
+//         }
+        
+//     }
+
+// return -1
+    
+// }
+
+// let arr=[2,3,5,9,10,11]
+// let target =10
+
+// let res=binarySearch(arr,target)
+
+// console.log(res);
+

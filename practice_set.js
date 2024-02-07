@@ -434,3 +434,69 @@ console.log(result)
 
 // 1) How to find the maximum occurring character in a given String? 👍
 
+//find the smalest element in array
+
+// let smallArray = [23, 5, 77, 4, 1, 32, 89, 45];
+
+// let low = smallArray[0];
+
+// function smallFunc(smallArray) {
+//   for (let i = 0; i < smallArray.length - 1; i++) {
+//     if (low > smallArray[i]) {
+//       low = smallArray[i];
+//     }
+//   }
+
+//   return low;
+// }
+// let res = smallFunc(smallArray);
+
+// console.log(res);
+
+
+
+// let smallArray = [23, 5, 77, 4, 32, 89,45,2];
+
+
+// function smallFunc(smallArray) {
+//   for (let i = 0; i < smallArray.length; i++) {
+//     if (low > smallArray[i]) {
+//         xx.push(low)
+//       low = smallArray[i];
+//     }sor
+//   }
+
+//   return xx;
+// }
+// let res = smallFunc(smallArray);
+
+// console.log(res);
+
+let missingNumber=(array,n)=>{
+        
+  let sortedarray= array.sort()
+
+  
+  let first=sortedarray[0]
+  let last =sortedarray.length
+
+  let value=[]
+
+  for(let i=first; i<=last; i++){
+
+    if (array.indexOf(i)==-1) {
+      console.log(i);
+      value.push(i)
+      
+    }
+  }
+
+  return value
+
+
+
+}
+let array=[1,2,3,5]
+let res=missingNumber(array)
+
+console.log(res);
