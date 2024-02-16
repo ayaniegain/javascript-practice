@@ -453,10 +453,7 @@ console.log(result)
 
 // console.log(res);
 
-
-
 // let smallArray = [23, 5, 77, 4, 32, 89,45,2];
-
 
 // function smallFunc(smallArray) {
 //   for (let i = 0; i < smallArray.length; i++) {
@@ -472,31 +469,46 @@ console.log(result)
 
 // console.log(res);
 
-let missingNumber=(array,n)=>{
-        
-  let sortedarray= array.sort()
+// let missingNumber=(array,n)=>{
 
-  
-  let first=sortedarray[0]
-  let last =sortedarray.length
+//   let sortedarray= array.sort()
 
-  let value=[]
+//   let first=sortedarray[0]
+//   let last =sortedarray.length
 
-  for(let i=first; i<=last; i++){
+//   let value=[]
 
-    if (array.indexOf(i)==-1) {
-      console.log(i);
-      value.push(i)
-      
-    }
-  }
+//   for(let i=first; i<=last; i++){
 
-  return value
+//     if (array.indexOf(i)==-1) {
+//       console.log(i);
+//       value.push(i)
+
+//     }
+//   }
+
+//   return value
+
+// }
+// let array=[1,2,3,5]
+// let res=missingNumber(array)
+
+// console.log(res);
+
+//missing number in array
+
+// let arr = [12, 34, 55, 67, 78, 23, 90];
+// let no = 78;
+
+// function misstinNo(arr, no) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == no) {
+//       return arr.indexOf(arr[i]);
+//     }
+//   }
+// }
+
+// let res = misstinNo(arr, no);
+// console.log(res);
 
 
-
-}
-let array=[1,2,3,5]
-let res=missingNumber(array)
-
-console.log(res);

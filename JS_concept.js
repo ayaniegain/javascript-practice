@@ -2,6 +2,8 @@
 // (function () {
 //    console.log("hello");
 
+const { Axios } = require("axios");
+
 //  })()
 
 //promise
@@ -245,20 +247,138 @@
 
 // console.log(value1);
 
+// // shallow copy
+
+// let val=[23,44,56,1,9]
+
+// let xx=val.splice(0,2)
+
+// console.log(xx);
+
+// console.log(val);
+
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    hobbies: ["reading", "hiking", "coding"],
+    address: {
+      street: "123 Main St",
+      city: "Anytown",
+      country: "USA"
+    },
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+
+//   console.log(Object.keys(person))
+//   console.log(Object.values(person))
+//   console.log((person.hasOwnProperty("age")))
+
+// for (const i in person) {
+//    console.log(person[i]);
+// }
+
+// console.log( Object.entries(person));
+// console.log( Object.create(person));
+
+//IIFE
+
+//  ;(function(){
+// console.log("hello");
+// })()
+
+// ;(function () {
+//   console.log("hii");  
+// })()
+
+//Hoisting 👍
+
+// x=12
+
+// console.log(x);
+
+// var x;
 
 
+// hoist()
+
+// function hoist() {
+ 
+//     console.log("hoist");
+    
+// }
+
+//closure 👍
+
+// function outerFunc() {
+//     let value=24
+//  return   function innerFunc() {
+//         return value
+//     }
+// }
+// console.log(outerFunc()());
+
+// callback👍
+
+// let showResults=(c,callback)=>{
+//     callback()
+//     let b=3
+
+//     console.log(a+b+c);
+
+// }
 
 
+// let callbackFunc=()=>{
+//     return a=2
+// }
+// let c=4
+
+// showResults(c,callbackFunc)
 
 
+// const promise= new Promise((resolve,reject)=>{
+//     let val=5
 
+//     if (val<10) {
 
+//         resolve("data resolved")
+        
+//     }else{
+        
+//         reject("data rejected")
+//     }
 
+// })
 
+// promise.then((e)=>{
+//     console.log(e);
 
+// }).catch((err)=>{
+//     console.log(err);
+// })
 
+// const showPosts=async()=>{
+//     const res= await fetch('https://jsonplacenolder.typicode.com/posts')
+//   let post=  await res.json()
+//     console.log(post)
+// }
+// showPosts()
+const axios = require('axios');
 
+const showPosts = async () => {
 
+    try {
+        
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        console.log(response.data) ;
+    } catch (error) {
+     console.log(error);   
+    }
+}
+showPosts();
 
 
 
