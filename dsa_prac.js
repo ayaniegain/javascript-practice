@@ -799,21 +799,20 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 //     for (let i = 0; i < arr.length; i++) {
 //        if (array[i]<count+k) {
 //             count++
-//        }        
+//        }
 //     }
 
 //     return count+k
-  
+
 // }
 
 // console.log(findKelm(array,k))
-
 
 // function binarySearch(arr,target) {
 
 //     let min=0
 //     let max=arr.length-1
-    
+
 //     while (min<=max) {
 //         let mid=(Math.floor((min+max)/2))
 //         if (arr[mid]==target) {
@@ -824,11 +823,11 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 //         }else {
 //             max= mid-1
 //         }
-        
+
 //     }
 
 // return -1
-    
+
 // }
 
 // let arr=[2,3,5,9,10,11]
@@ -837,4 +836,3 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 // let res=binarySearch(arr,target)
 
 // console.log(res);
-

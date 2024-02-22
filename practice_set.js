@@ -511,4 +511,39 @@ console.log(result)
 // let res = misstinNo(arr, no);
 // console.log(res);
 
+// reverse the string
+
+// let s = ["h", "e", "l", "l", "o"];
+
+// var reverseString = function (s) {
+//   let low = 0;
+//   let high = s.length-1;
+
+//   while (low < high) {
+
+//       [s[low], s[high]] = [s[high], s[low]];
+//       high--;
+//       low++;
+//   }
+//   return s;
+// };
+
+// console.log(reverseString(s));
+
+// var createCounter = function (n) {
+//   let counter = n;
+
+//   return function () {
+    
+//     return counter ++;
+//   };
+// };
+
+// const counter = createCounter(10);
+// console.log(counter()); // 10
+// console.log(counter()); // 11
+// console.log(counter()); // 12
+
+
+// - Find the maximum and minimum element in an array.👍
 
