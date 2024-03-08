@@ -544,6 +544,3 @@ console.log(result)
 // console.log(counter()); // 11
 // console.log(counter()); // 12
 
-
-// - Find the maximum and minimum element in an array.👍
-
