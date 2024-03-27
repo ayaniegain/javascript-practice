@@ -1,4 +1,4 @@
-// IIFE
+// IIFE 👌
 // (function () {
 //    console.log("hello");
 
@@ -6,7 +6,7 @@ const { Axios } = require("axios");
 
 //  })()
 
-//promise
+//promise 👌
 // let res= new Promise((resolve,reject)=>{
 //   if (resolve) {
 //     resolve ("success");
@@ -23,7 +23,7 @@ const { Axios } = require("axios");
 
 // )
 
-// fetch api call
+// fetch api call 👌
 
 // function apicall() {
 //  let res=   fetch('https://randomuser.me/api/')
@@ -42,7 +42,8 @@ const { Axios } = require("axios");
 
 // apicall()
 
-// with try catch
+// with try catch 👌
+
 // try {
 // } catch (error) {}
 
@@ -63,7 +64,7 @@ const { Axios } = require("axios");
 
 // apicall();
 
- //callback
+ //callback 👌
 
 //  function outer(a,callback) {
 
@@ -80,7 +81,7 @@ const { Axios } = require("axios");
 // }
 // outer(2,inner)
 
-//closoure
+//closoure 👌
 
 // let val=28
 // function outer() {
@@ -103,7 +104,7 @@ const { Axios } = require("axios");
 
 // call apply bind 
 
-// //call
+// //call 👌
 // function greet(name) {
 // console.log(`this is ${name} my ${this.title}`);
     
@@ -112,7 +113,7 @@ const { Axios } = require("axios");
 
 // greet.call(context,'User')
 
-// //apply
+// //apply 👌
 
 // function greet2(name) {
 // console.log(`this is ${name} my ${this.title}`);
@@ -122,13 +123,14 @@ const { Axios } = require("axios");
 
 // greet2.apply(context2,["User2"])
 
-// //bind
+// //bind 👌
 
 // class
 
-// hoisting
+// hoisting 👌
 
-// 👍 when any of the function and value move top of their exection scopre during compailization phase, basically var and normal function can be hoisted , and function declaration and let can;t .
+// 👍 when any of the function and value move top of their exection scopre during compailization phase, 
+// basically var and normal function can be hoisted , and function declaration and let can;t .
 
 // b=34
 
@@ -141,9 +143,10 @@ const { Axios } = require("axios");
 //     console.log(110);
 // }
 
-//closure
+//closure 👌
 
-// 👍A closure is the combination of a function and the lexical environment, when innerfunction access the outer function value even the outer function has finished their exection its call closure
+// 👍A closure is the combination of a function and the lexical environment,
+// when innerfunction access the outer function value even the outer function has finished their exection its call closure
 
 // function Outer(){
 // let value= 20
@@ -161,7 +164,7 @@ const { Axios } = require("axios");
 // let result= Outer()
 // result()
 
-// Event loop
+// Event loop 👌
 // the event loop is the mechanisam of the asyncronus operation , whic check the non bloxking code in the event queue whether its free of not <div className="
 
 
@@ -178,7 +181,8 @@ const { Axios } = require("axios");
 //     }
 
 // })
-// myPromise.then((data)=>console.log(data)).catch((error)=>console.log(error))
+// myPromise.then((data)=>console.log(data))
+// .catch((error)=>console.log(error))
 
 
 
@@ -366,30 +370,19 @@ let person = {
 //     console.log(post)
 // }
 // showPosts()
-const axios = require('axios');
+// const axios = require('axios');
 
-const showPosts = async () => {
+// const showPosts = async () => {
 
-    try {
+//     try {
         
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
-        console.log(response.data) ;
-    } catch (error) {
-     console.log(error);   
-    }
-}
-showPosts();
-
-
-
-
-
-
-
-
-
-
-
+//         const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+//         console.log(response.data) ;
+//     } catch (error) {
+//      console.log(error);   
+//     }
+// }
+// showPosts();
 
 
 
