@@ -544,3 +544,64 @@ console.log(result)
 // console.log(counter()); // 11
 // console.log(counter()); // 12
 
+
+//write a program decrese the payment by 10 rupees in actor 1 and actor 2 and show the results.
+
+// let actors =[
+//     {
+//       name:'Actor 1',
+//       payment:200
+//     },
+//     {
+//       name:'Actor 2',
+//       payment:100
+//     },
+//     {
+//       name:'Actor 3',
+//       payment:300
+//     }
+//   ]
+
+//   actors.forEach(actor => {
+//     if (actor.name === 'Actor 1' || actor.name === 'Actor 2') {
+//         actor.payment =actor.payment- 10;
+//     }
+// });
+
+
+// console.log(actors);
+
+
+
+let actors =[
+    {
+      name:'Actor 1',
+      payment:200
+    },
+    {
+      name:'Actor 2',
+      payment:100
+    },
+    {
+      name:'Actor 3',
+      payment:300
+    }
+  ]
+
+//   let newValue=0
+//   actors.forEach((e)=>{
+
+    
+//     newValue=newValue+e.payment
+
+
+// })
+// console.log(newValue);
+
+// let total= actors.reduce((acc,curr)=>{
+//     return acc+curr.payment
+// },0)
+
+// console.log(total);
+
+ 

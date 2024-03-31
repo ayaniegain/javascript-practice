@@ -261,20 +261,20 @@ const { Axios } = require("axios");
 
 // console.log(val);
 
-let person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30,
-    hobbies: ["reading", "hiking", "coding"],
-    address: {
-      street: "123 Main St",
-      city: "Anytown",
-      country: "USA"
-    },
-    fullName: function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
+// let person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 30,
+//     hobbies: ["reading", "hiking", "coding"],
+//     address: {
+//       street: "123 Main St",
+//       city: "Anytown",
+//       country: "USA"
+//     },
+//     fullName: function() {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   };
 
 //   console.log(Object.keys(person))
 //   console.log(Object.values(person))
@@ -383,6 +383,8 @@ let person = {
 //     }
 // }
 // showPosts();
+
+
 
 
 
