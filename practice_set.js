@@ -534,7 +534,7 @@ console.log(result)
 //   let counter = n;
 
 //   return function () {
-    
+
 //     return counter ++;
 //   };
 // };
@@ -543,7 +543,6 @@ console.log(result)
 // console.log(counter()); // 10
 // console.log(counter()); // 11
 // console.log(counter()); // 12
-
 
 //write a program decrese the payment by 10 rupees in actor 1 and actor 2 and show the results.
 
@@ -568,32 +567,27 @@ console.log(result)
 //     }
 // });
 
-
 // console.log(actors);
 
-
-
-let actors =[
-    {
-      name:'Actor 1',
-      payment:200
-    },
-    {
-      name:'Actor 2',
-      payment:100
-    },
-    {
-      name:'Actor 3',
-      payment:300
-    }
-  ]
+let actors = [
+  {
+    name: "Actor 1",
+    payment: 200,
+  },
+  {
+    name: "Actor 2",
+    payment: 100,
+  },
+  {
+    name: "Actor 3",
+    payment: 300,
+  },
+];
 
 //   let newValue=0
 //   actors.forEach((e)=>{
 
-    
 //     newValue=newValue+e.payment
-
 
 // })
 // console.log(newValue);
@@ -604,4 +598,79 @@ let actors =[
 
 // console.log(total);
 
- 
+//  const uniqueNumber= new Set();
+
+//  uniqueNumber.add(30)
+//  uniqueNumber.add(33)
+//  uniqueNumber.add(23)
+
+//  console.log( uniqueNumber);
+
+// const urls= new Map()
+
+// urls.set('dev1',"dev 1")
+// urls.set('dev2',"dev 2")
+// urls.set('dev3',"dev 3")
+
+// console.log(urls.get('dev1'));
+
+// for (const [key,value] of urls) {
+
+// console.log(key);
+
+// }
+
+// let obj={
+//   'dev1':"dev 1",
+//   'dev1':"dev 1",
+//   'dev1':"dev 1",
+
+// }
+
+// for (const [val,key] of Object.entries(obj)) {
+//   console.log(key);
+// }
+
+// OOPs
+
+class Car {
+  constructor(name, price) {
+    this.name = name;
+    this.price = price;
+  }
+
+  runCar = () => {
+    return ` ${this.name} speed is 29kmh`;
+  };
+}
+
+let car1 = new Car("maruti", 123);
+
+// console.log(car1.runCar());
+
+class Address extends Car {
+  constructor(address, name) {
+    super(name);
+    this.address = address;
+  }
+}
+
+let location = new Address("Delhi",'helo');
+
+console.log(location);
+
+// function BankAccount(balance) {
+//   this.balance = balance;
+
+//   this.deposite = function (amount) {
+//     this.balance += amount;
+//   };
+// }
+
+// const rakeshBankAccout = new BankAccount(5000);
+// const johnBankAccount = new BankAccount(6000);
+
+// johnBankAccount.deposite(3000);
+
+// console.log(rakeshBankAccout);
+// console.log(johnBankAccount);

@@ -64,16 +64,14 @@ const { Axios } = require("axios");
 
 // apicall();
 
- //callback 👌
+//callback 👌
 
 //  function outer(a,callback) {
 
 //      callback()
 //      console.log(a+b);
 
-    
 //  }
-
 
 //  function inner() {
 
@@ -86,12 +84,10 @@ const { Axios } = require("axios");
 // let val=28
 // function outer() {
 //   return function inner() {
-//     //  val=3 
+//     //  val=3
 
 //      return val
 
-
-        
 //     }
 // }
 
@@ -101,13 +97,12 @@ const { Axios } = require("axios");
 
 // console.log(res);
 
-
-// call apply bind 
+// call apply bind
 
 // //call 👌
 // function greet(name) {
 // console.log(`this is ${name} my ${this.title}`);
-    
+
 // }
 // const context={title:'hello'};
 
@@ -117,7 +112,7 @@ const { Axios } = require("axios");
 
 // function greet2(name) {
 // console.log(`this is ${name} my ${this.title}`);
-    
+
 // }
 // const context2={title:'hello'};
 
@@ -129,7 +124,7 @@ const { Axios } = require("axios");
 
 // hoisting 👌
 
-// 👍 when any of the function and value move top of their exection scopre during compailization phase, 
+// 👍 when any of the function and value move top of their exection scopre during compailization phase,
 // basically var and normal function can be hoisted , and function declaration and let can;t .
 
 // b=34
@@ -155,7 +150,7 @@ const { Axios } = require("axios");
 //         let value =10
 
 //         console.log(value);
-        
+
 //     }
 //     return Inner
 
@@ -166,8 +161,6 @@ const { Axios } = require("axios");
 
 // Event loop 👌
 // the event loop is the mechanisam of the asyncronus operation , whic check the non bloxking code in the event queue whether its free of not <div className="
-
-
 
 // let myPromise= new Promise((resolved,reject)=>{
 
@@ -184,12 +177,10 @@ const { Axios } = require("axios");
 // myPromise.then((data)=>console.log(data))
 // .catch((error)=>console.log(error))
 
-
-
 // let url ="https://randomuser.me/api/"
 
 // let MyPromise= new Promise((resolve,reject)=>{
-      
+
 //     fetch(url)
 //       .then(response => {
 //         // Check if the response status is ok (status code 200-299)
@@ -228,8 +219,6 @@ const { Axios } = require("axios");
 
 // 👍
 
-
-
 // class Person {
 
 //     constructor(name,age) {
@@ -242,7 +231,7 @@ const { Axios } = require("axios");
 //     canrun(){
 //         console.log(`hello  i am ${this.name} my age is ${this.age}`);
 //     }
- 
+
 // }
 
 // let value1= new Person("ayan",23)
@@ -294,7 +283,7 @@ const { Axios } = require("axios");
 // })()
 
 // ;(function () {
-//   console.log("hii");  
+//   console.log("hii");
 // })()
 
 //Hoisting 👍
@@ -305,13 +294,12 @@ const { Axios } = require("axios");
 
 // var x;
 
-
 // hoist()
 
 // function hoist() {
- 
+
 //     console.log("hoist");
-    
+
 // }
 
 //closure 👍
@@ -334,7 +322,6 @@ const { Axios } = require("axios");
 
 // }
 
-
 // let callbackFunc=()=>{
 //     return a=2
 // }
@@ -342,16 +329,15 @@ const { Axios } = require("axios");
 
 // showResults(c,callbackFunc)
 
-
 // const promise= new Promise((resolve,reject)=>{
 //     let val=5
 
 //     if (val<10) {
 
 //         resolve("data resolved")
-        
+
 //     }else{
-        
+
 //         reject("data rejected")
 //     }
 
@@ -375,78 +361,137 @@ const { Axios } = require("axios");
 // const showPosts = async () => {
 
 //     try {
-        
+
 //         const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
 //         console.log(response.data) ;
 //     } catch (error) {
-//      console.log(error);   
+//      console.log(error);
 //     }
 // }
 // showPosts();
 
+///////Interview Practice 👌
 
+/**
+let CheckPassValue = (argValue) => {
+  let res = argValue * 10;
 
+  console.log(res);
+};
 
+let value = 6;
 
+CheckPassValue(value);
+console.log(value);
+ */
 
+/**let CheckRefValue = (argValue) => {
+  argValue.push(89);
 
+  console.log(argValue);
+};
 
+let arry = [6, 45, 332, 6];
 
+CheckRefValue(arry);
+console.log(arry);
+ */
 
+//pure  and impure
 
+// Example of a pure function
+// function add(a, b) {
+//     return a + b;
+//   }
 
+//   console.log(add(2, 3)); // Outputs: 5
 
+// let res=0
 
+// function impfn(a) {
+// return  res+= a
 
+// }
 
+// console.log(impfn(5))
+// console.log(impfn(5))
+// console.log(impfn(5))
+// console.log(impfn(5))
 
+//  for of
 
+// let arr=[45,33,24,6,88]
 
+// for (const i of arr) {
 
+//     console.log(i);
 
+// }
 
+//for in 👌
 
+// let val=[ { name: "John", age: 30 },
+// { name: "Alice", age: 25 },
+// { name: "Bob", age: 35 }]
 
+// // for (const key in val) {
 
+// //     console.log(`${val[key].name} :  ${val[key].age}`);
 
+// // }
 
+// let vv={ name: "John", age: 30 }
 
+// console.log(Object.values(vv));
 
+// different type of Object assign 👌
 
+// let animal = {
+//     name: "Animal name"
+//     }
+// let cat = Object.create(animal);
 
+// // console.log(cat.name);
 
+// let home=new Object()
 
+// home.name="123pp"
+// home.price="50000"
 
+// // console.log(home);
 
+// let newObj= Object.assign({},{ fullname: "John", age: 30 },home)
 
+// console.log(newObj);
 
+//Object Seal and freeze 👌
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let data={
+//     a:10
+// }
+// Object.freeze(data);
+// data.a=80
+
+// console.log(data);
+
+let Person1 = {
+  firstName: "ayan",
+  lastName: "biswas",
+};
+
+let fullName = function (address) {
+  console.log(`${this.firstName}  ${this.lastName} ${address}`);
+};
+
+
+let Person2 = {
+    firstName: "Arun",
+    lastName: "ghosh",
+};
+
+fullName.call(Person1,'kol');
+fullName.call(Person2,"blr");
+fullName.apply(Person1,["kol"]);
+let res=fullName.bind(Person2,["blr"])
+res()
+res()
