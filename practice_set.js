@@ -3,8 +3,8 @@
 const { on } = require("nodemon");
 
 // let Arr= [7,-4,3,1,2,6,9,-3]
-// function smallposMisstingNo(array) {
-//     const numbersSet = new Set(array);
+// function smallposMisstingNo(arr) {
+//     const numbersSet = new Set(arr);
 //   let leastPositiveNumber = 1;
 
 //   while(numbersSet.has(leastPositiveNumber)) {
@@ -191,7 +191,7 @@ console.log(result)
 // ]
 // }
 
-// swap array value in perticular possition 👀
+// swap arr value in perticular possition 👀
 
 // swap two number
 
@@ -266,11 +266,11 @@ console.log(result)
 //  console.log(val1)
 //  console.log(val2)
 
-//find the smellest number in array 👏
+//find the smellest number in arr 👏
 
 // let arry=[1,24,3,48,99]
 
-// let smallestArray=(arry)=>{
+// let smallestarr=(arry)=>{
 // let small=arry[0]
 //     for(let i=0;i<arry.length;i++){
 //        if(small>arry[i]){
@@ -281,7 +281,7 @@ console.log(result)
 //    return small
 // }
 
-// let res=smallestArray(arry)
+// let res=smallestarr(arry)
 
 // console.log(res)
 
@@ -296,8 +296,8 @@ console.log(result)
 // let val1={name:"Ayan",age:28}
 // let val2={name2:"Ayan1",age2:18}
 
-// let newArray={...val1, ...val2}
-// console.log(newArray);
+// let newarr={...val1, ...val2}
+// console.log(newarr);
 
 //linear search👍
 
@@ -317,7 +317,7 @@ console.log(result)
 // let res=lenSerch(7)
 // console.log(res);
 
-//sort the array
+//sort the arr
 
 // let dd=[3,2,6,7,8,5,50]
 
@@ -434,53 +434,53 @@ console.log(result)
 
 // 1) How to find the maximum occurring character in a given String? 👍
 
-//find the smalest element in array
+//find the smalest element in arr
 
-// let smallArray = [23, 5, 77, 4, 1, 32, 89, 45];
+// let smallarr = [23, 5, 77, 4, 1, 32, 89, 45];
 
-// let low = smallArray[0];
+// let low = smallarr[0];
 
-// function smallFunc(smallArray) {
-//   for (let i = 0; i < smallArray.length - 1; i++) {
-//     if (low > smallArray[i]) {
-//       low = smallArray[i];
+// function smallFunc(smallarr) {
+//   for (let i = 0; i < smallarr.length - 1; i++) {
+//     if (low > smallarr[i]) {
+//       low = smallarr[i];
 //     }
 //   }
 
 //   return low;
 // }
-// let res = smallFunc(smallArray);
+// let res = smallFunc(smallarr);
 
 // console.log(res);
 
-// let smallArray = [23, 5, 77, 4, 32, 89,45,2];
+// let smallarr = [23, 5, 77, 4, 32, 89,45,2];
 
-// function smallFunc(smallArray) {
-//   for (let i = 0; i < smallArray.length; i++) {
-//     if (low > smallArray[i]) {
+// function smallFunc(smallarr) {
+//   for (let i = 0; i < smallarr.length; i++) {
+//     if (low > smallarr[i]) {
 //         xx.push(low)
-//       low = smallArray[i];
+//       low = smallarr[i];
 //     }sor
 //   }
 
 //   return xx;
 // }
-// let res = smallFunc(smallArray);
+// let res = smallFunc(smallarr);
 
 // console.log(res);
 
-// let missingNumber=(array,n)=>{
+// let missingNumber=(arr,n)=>{
 
-//   let sortedarray= array.sort()
+//   let sortedarr= arr.sort()
 
-//   let first=sortedarray[0]
-//   let last =sortedarray.length
+//   let first=sortedarr[0]
+//   let last =sortedarr.length
 
 //   let value=[]
 
 //   for(let i=first; i<=last; i++){
 
-//     if (array.indexOf(i)==-1) {
+//     if (arr.indexOf(i)==-1) {
 //       console.log(i);
 //       value.push(i)
 
@@ -490,12 +490,12 @@ console.log(result)
 //   return value
 
 // }
-// let array=[1,2,3,5]
-// let res=missingNumber(array)
+// let arr=[1,2,3,5]
+// let res=missingNumber(arr)
 
 // console.log(res);
 
-//missing number in array
+//missing number in arr
 
 // let arr = [12, 34, 55, 67, 78, 23, 90];
 // let no = 78;
@@ -631,14 +631,15 @@ let actors = [
 //   console.log(key);
 // }
 
-// OOPs
-
+// OOPs✔️
+/** 
+ * 
 class Car {
   constructor(name, price) {
     this.name = name;
     this.price = price;
   }
-
+  
   runCar = () => {
     return ` ${this.name} speed is 29kmh`;
   };
@@ -656,8 +657,9 @@ class Address extends Car {
 }
 
 let location = new Address("Delhi",'helo');
+*/
 
-console.log(location);
+// console.log(location);
 
 // function BankAccount(balance) {
 //   this.balance = balance;
@@ -674,3 +676,42 @@ console.log(location);
 
 // console.log(rakeshBankAccout);
 // console.log(johnBankAccount);
+
+/*
+
+//find the duplicate value✔️
+*let duplicateElm=()=>{
+
+  let arr=[34,77,89,0,33,34,9,66,4,9]
+  let blnkarr=[]
+  
+
+  for (let i = 0; i < arr.length; i++) {
+      for (let j = i+1; j < arr.length; j++) {
+        if (arr[i]==arr[j] && !blnkarr.includes(arr[i])) {
+          blnkarr.push(arr[i])
+          
+        }
+        
+      }    
+  }
+
+  return blnkarr
+
+}
+let res=duplicateElm()
+console.log(res);
+ */
+
+
+/**
+ * 
+let arr=[34,77,89,0,33,34,9,66,4,9]
+
+
+let newValue=arr.filter((elm,index,arr)=>arr.indexOf(elm)!==index)
+
+console.log(newValue);
+*/
+//find max and min value in array
+

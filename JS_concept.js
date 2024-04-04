@@ -473,7 +473,7 @@ console.log(arry);
 // data.a=80
 
 // console.log(data);
-
+/**
 let Person1 = {
   firstName: "ayan",
   lastName: "biswas",
@@ -495,3 +495,6 @@ fullName.apply(Person1,["kol"]);
 let res=fullName.bind(Person2,["blr"])
 res()
 res()
+
+ */
+
