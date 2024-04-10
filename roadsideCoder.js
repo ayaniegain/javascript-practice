@@ -93,5 +93,173 @@
 
 // console.log(newArray);
 
+//function expression function declaration and First Class function 👍
 
+// let firstfunc = (a) => {
+//   return (a = a * a);
+// };
 
+// let mainfunc = (cb) => {
+//   console.log(`the sum is ${cb(6)}`);
+// };
+
+// mainfunc(firstfunc);
+
+// IIFE👍
+
+// (()=>{
+// console.log("hello");
+// })()
+
+// var x=21
+
+// let hello=()=> {
+//     console.log(x);
+
+//     var x=20
+// }
+
+// hello()
+
+//rest paramenet and spread parameter 👍
+// callback
+
+//  function name(a,...b) {
+
+//     // console.log(b);
+
+//  }
+//  name(12,45,78)
+
+// const [a,...c]=[12,34,56]
+
+// console.log(c);
+
+// callback 👍
+
+// function showValue(cp) {
+//   console.log(cp);
+// }
+
+// function sumfunc(a, b) {
+//   return a + b;
+// }
+
+// showValue(sumfunc(4, 6));
+
+//implicit retuen function in arrow function 👍
+
+// let user1 = {
+//   name: "ayan",
+//   work: function (val, val2) {
+//     console.log(` ${this.name} can walk ${val}/hr`);
+//   },
+// };
+
+// let user2 = {
+//   name: "arun",
+// };
+
+// user1.work.call(user2, 30);
+// // user1.work.apply(user2,[40,32])
+
+// let storeval = user1.work.bind(user2, 30);
+
+// storeval();
+
+//lexical scope and closures 👍
+
+// let value = 2;
+// function outerDisplayName() {
+//   let value = 3;
+
+//   function innerDisplayName(no) {
+//     console.log(value+no);
+//   }
+
+//   return innerDisplayName;
+// }
+
+// outerDisplayName()(7);
+
+// -----output based 👍
+
+// function createBase(b) {
+//   return ((a) => {
+//     console.log(a + b);
+//   });
+// }
+
+// var addsix = createBase(6);
+// addsix(10);
+// addsix(21);
+
+// -----output based 👍
+
+// function find() {
+//   let a = [];
+//   for (let i = 0; i < 100000; i++) {
+//     a[i] = i * i;
+//   }
+
+//   return function (index) {
+//     console.log(a[index]);
+//   };
+// }
+
+// const closure = find();
+
+// closure(6);
+
+// -----output based 👍
+
+// for (var i = 0; i < 3; i++) {
+//   function inner(i) {
+//     setTimeout(() => {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+
+//   inner(i);
+// }
+
+// -----output based 👍 private counter
+
+// function counter() {
+//   var _count=0
+
+// }
+
+// console.log(_count);
+
+// counter()
+
+//module pattern read leter 👍👍
+
+//memoizing function
+
+//currying example 👍
+
+// function f(a) {
+//   return function (b) {
+//     return function (c) {
+//       return `${a}${b}${c}`;
+//     };
+//   };
+// }
+
+// console.log(f(3)(5)(6));
+
+//Currying in javascript QS1 sum(2)(6)(1) 👍
+
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+
+let res = sum(2)(6)(1);
+
+console.log(res);
