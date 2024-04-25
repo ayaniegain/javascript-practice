@@ -252,14 +252,62 @@
 
 //Currying in javascript QS1 sum(2)(6)(1) 👍
 
-function sum(a) {
-  return function (b) {
-    return function (c) {
-      return a + b + c;
-    };
-  };
-}
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// }
 
-let res = sum(2)(6)(1);
+// let res = sum(2)(6)(1);
 
-console.log(res);
+// console.log(res);
+
+// question 2 👍
+
+// function evelute(val) {
+//   return function (a) {
+//     return function (b) {
+//       if (val == "sum") {
+//         return a + b;
+//       } else if (val == "multiply") {
+//         return a * b;
+//       } else if (val == "divide") {
+//         return a / b;
+//       } else if (val == "sub") {
+//         return a - b;
+//       }
+//     };
+//   };
+// }
+
+// let res = evelute("sub")(4)(3);
+
+// console.log(res);
+
+// infinite currying👍
+
+// function sum(a) {
+//   return function (b) {
+//     if (b) return sum(a + b);
+//     return a;
+//   };
+// }
+// let res = sum(1)(2)(3)(6)();
+
+// console.log(res);
+
+// Curring vs partial Aplication 👍
+
+// function partialCurrying(a) {
+//   return function (b, c) {
+//     return a + b + c;
+//   };
+// }
+
+// let res = partialCurrying(2);
+
+// console.log(res(4, 3));
+
+

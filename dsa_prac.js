@@ -836,3 +836,21 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 // let res=binarySearch(arr,target)
 
 
+// -----------------start again 👍 21/04/24
+
+// count the integer length 
+
+function countInterger(no) {
+
+    let count=0
+    while (no!=0) {
+        count++
+        no= Math.floor(no/10)
+    }
+    return count
+
+}
+let value="1234569"
+let res=countInterger(value)
+
+console.log(res);

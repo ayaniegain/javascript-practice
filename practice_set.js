@@ -725,12 +725,19 @@ console.log(newValue);
 // bonus
 // You need two inputs from the user. Can you make it in a way where second input is only visible after the first input is given i.e. bill amount should be filled.
 
-function currencyCalculate(amount){
-  let note=[1, 5, 10, 20, 100, 500, 2000]
+// function currencyCalculate(amount){
+//   let note=[1, 5, 10, 20, 100, 500, 2000]
 
 
 
-}
-let amount=243
+// }
+// let amount=243
 
-currencyCalculate(amount)
+// currencyCalculate(amount)
+
+// for (let i = 0; i < 11; i++) {
+
+//     console.log(`${i}*${i}=${i*i}`);
+    
+  
+// }
