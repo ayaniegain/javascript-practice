@@ -703,7 +703,6 @@ let res=duplicateElm()
 console.log(res);
  */
 
-
 /**
  * 
 let arr=[34,77,89,0,33,34,9,66,4,9]
@@ -714,7 +713,6 @@ let newValue=arr.filter((elm,index,arr)=>arr.indexOf(elm)!==index)
 console.log(newValue);
 */
 //find max and min value in array
-
 
 // JS practice // 05/04/2024
 // manage the cash register
@@ -728,8 +726,6 @@ console.log(newValue);
 // function currencyCalculate(amount){
 //   let note=[1, 5, 10, 20, 100, 500, 2000]
 
-
-
 // }
 // let amount=243
 
@@ -738,6 +734,20 @@ console.log(newValue);
 // for (let i = 0; i < 11; i++) {
 
 //     console.log(`${i}*${i}=${i*i}`);
-    
-  
+
 // }
+
+// -----------common problem
+
+function maxminfunc(val) {
+  let low = val[0];
+  for (let i = 0; i < val.length; i++) {
+    if (val[i] < low) {
+      low = val[i];
+    }
+  }
+
+  return low;
+}
+let arrValue = [34, 55, 67, 43, 4, 6];
+console.log(maxminfunc(arrValue));
