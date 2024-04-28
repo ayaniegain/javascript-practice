@@ -848,7 +848,6 @@ function countInterger(no) {
         no= Math.floor(no/10)
     }
     return count
-
 }
 let value="1234569"
 let res=countInterger(value)
