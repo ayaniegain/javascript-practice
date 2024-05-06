@@ -739,15 +739,32 @@ console.log(newValue);
 
 // -----------common problem
 
-function maxminfunc(val) {
-  let low = val[0];
-  for (let i = 0; i < val.length; i++) {
-    if (val[i] < low) {
-      low = val[i];
-    }
-  }
+// function maxminfunc(val) {
+//   let low = val[0];
+//   for (let i = 0; i < val.length; i++) {
+//     if (val[i] < low) {
+//       low = val[i];
+//     }
+//   }
 
-  return low;
+//   return low;
+// }
+// let arrValue = [34, 55, 67, 43, 4, 6];
+// console.log(maxminfunc(arrValue));
+
+function number100(arr) {
+  let low=arr[0]
+  for (let i = 0; i < arr.length; i++)     
+    if(arr[i]!=100){
+      match=arr[i]+low
+      low ++
+
+    }
+    return match
+
 }
-let arrValue = [34, 55, 67, 43, 4, 6];
-console.log(maxminfunc(arrValue));
+
+let arrval = [20, 80, 50, 30, 40];
+let res = number100(arrval);
+
+console.log(res);
