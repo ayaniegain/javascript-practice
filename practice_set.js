@@ -752,19 +752,17 @@ console.log(newValue);
 // let arrValue = [34, 55, 67, 43, 4, 6];
 // console.log(maxminfunc(arrValue));
 
-function number100(arr) {
-  let low=arr[0]
-  for (let i = 0; i < arr.length; i++)     
-    if(arr[i]!=100){
-      match=arr[i]+low
-      low ++
+// missing no in array
+// let co=[]
+// function missingNo(arr) {
+//   for (let i = 1; i <= arr.length; i++) {
+//    if (arr.indexOf(i)==-1) {
+//       co.push(i)
+//    }
+//   }
+// }
 
-    }
-    return match
+// let arr = [1, 2, 3, 5];
+// missingNo(arr);
 
-}
-
-let arrval = [20, 80, 50, 30, 40];
-let res = number100(arrval);
-
-console.log(res);
+// console.log(co);

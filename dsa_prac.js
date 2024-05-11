@@ -840,16 +840,21 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 
 // count the integer length 
 
-function countInterger(no) {
+// function countInterger(no) {
 
-    let count=0
-    while (no!=0) {
-        count++
-        no= Math.floor(no/10)
-    }
-    return count
-}
-let value="1234569"
-let res=countInterger(value)
+//     let count=0
+//     while (no!=0) {
+//         count++
+//         no= Math.floor(no/10)
+//     }
+//     return count
+// }
+// let value="1234569"
+// let res=countInterger(value)
 
-console.log(res);
+// console.log(res);
+
+
+// --------------♾️♾️-----------
+
+console.log("first")

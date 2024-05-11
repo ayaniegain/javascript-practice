@@ -14,6 +14,7 @@
 // }
 // scope()
 
+
 //2 decliration without initialisation 👍
 //3 hoisting👍
 // when javascript executed ;variable and function declired on top of their scope .
@@ -311,3 +312,13 @@
 // console.log(res(4, 3));
 
 
+function hello() {
+
+   
+
+    let str=["hello" ,"i love you"]
+    str1=str.pop()
+    return str1
+    
+}
+console.log(hello())
