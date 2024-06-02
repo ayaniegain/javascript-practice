@@ -312,13 +312,62 @@
 // console.log(res(4, 3));
 
 
-function hello() {
+// function hello() {
 
    
 
-    let str=["hello" ,"i love you"]
-    str1=str.pop()
-    return str1
+//     let str=["hello" ,"i love you"]
+//     str1=str.pop()
+//     return str1
+    
+// }
+// console.log(hello())
+
+
+// -------------XX 😁
+
+// var value= 'hello'
+// function product() {
+//      value=`${value} + hi`
+
+//     console.log(value)
+    
+// }
+// product()
+
+// let no=388
+//  no=88
+
+// console.log(no)
+
+
+// console.log(count1,count2,count3)
+
+// var count1 =2
+// let count2 =4
+// const count3 =5
+
+let node=document.getElementsByTagName("h2")[0]
+
+
+    
+    
+    let para = document.createElement("p")
+    node.appendChild(para)
+
+
+
+
+let nums=[1,2,3,5]
+
+let multiplied = nums.map(val => val * 5);
+
+multiplied.map((val)=>{
+    let textNode = document.createTextNode(val  + " ");
+    para.appendChild(textNode);
+    
+    
+    
     
 }
-console.log(hello())
+)

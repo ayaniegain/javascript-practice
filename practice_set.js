@@ -766,3 +766,20 @@ console.log(newValue);
 // missingNo(arr);
 
 // console.log(co);
+
+let arr=[20,40,30,50,35,65,100]
+
+
+
+
+arr.forEach(e => {
+  let no1
+  let no2
+
+  if ((no1(e) && no2(e+1)) ===100) {
+
+   console.log(true)
+    
+  }
+  
+});
