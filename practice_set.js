@@ -767,19 +767,204 @@ console.log(newValue);
 
 // console.log(co);
 
-let arr=[20,40,30,50,35,65,100]
+
+// ---------new Prac
+
+// let value="hello world";
+// res = value.replace(" ", "");
+
+// let xx=Array.from(res)
+
+// // console.log(xx)
+
+// // let result =value.charAt(6)
+// let result =value.substring(0,6)
+
+// // console.log(result)
+
+// let arr=[20,40,30,50,35,65,100]
+
+// let newArry=[]
+// arr.forEach((course)=>{
+//   newArry.push(course)
+// })
+
+
+// // console.log(newArry)
+
+
+// let username = ("          Enter your username  :            ");
+// username = username.trim();
+// username = username.replace(" ","");
+
+// Array.of(username)
 
 
 
+// Username might have extra spaces
 
-arr.forEach(e => {
-  let no1
-  let no2
+// console.log(username);
 
-  if ((no1(e) && no2(e+1)) ===100) {
+// 1>Check if an input is a string.
+/**
+let checkString=(val)=>{
 
-   console.log(true)
+  if(typeof(val)=='string'){
+    return true
+  }else{
     
+    return false
   }
+
+}
+
+// let str="12hello"
+let str=12
+
+let res= checkString(str)
+
+console.log(res)
+ */
+// 2 Determine if a string is empty or contains only whitespace characters
+/*
+let isStringEmpty=(str)=>{
+  str=str.trim()
+
+if (str=='') {
+return true
+
+}
+
+}
+let str="      "
+console.log(isStringEmpty(str))
+
+*/
+
+
+
+// 3/ Retrieve a specific character from a string based on its index.
+// 4// join two string
+// 5// total length
+/*
+ function checkIndexValue(str,str1){
+
+   return str.concat(str1).length
+}
+
+let str="hello how are you?"
+let str1=" I'm good"
+
+console.log(checkIndexValue(str,str1))
+*/
+
+// Intermediate
+// 1>Extract a portion of a string based on starting and ending indices.
+
+// function extractTheString(str) {
+
+//   return str.slice(6,str.length)
   
-});
+// }
+
+// console.log(extractTheString("hello I will stop tomorrow"))
+
+
+// let str ="Viru playing cricket, Viru is nice player"
+// let replacestr="Ayan"
+
+
+//       let res=str.replaceAll("Viru",replacestr)
+
+//       console.log(res)
+
+//1> Object , filter out the perticuler value where age is 30✅
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
+
+// let filteredUser=users.filter((user)=>{
+//   if (user.age==30) {
+//     return user
+//   }
+// })
+// console.log(filteredUser)
+// 2>Task: Calculate the sum of a particular property in an array of objects.✅
+// const products = [
+//   { name: "Apple", price: 1.2 },
+//   { name: "Banana", price: 0.8 },
+//   { name: "Cherry", price: 2.5 }
+// ];
+
+
+// let res=products.reduce((acc,curr)=>{
+//   return (acc+curr.price)
+// },0)
+
+// console.log(res)
+
+// 3>Example 3: Sorting an Array of Objects based on age.✅
+
+// const users = [
+//   { name: "Alice", age: 45 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
+
+// let newarry= users.sort((a,b)=>a.age-b.age)
+
+
+// console.log(newarry)
+//find the value✅
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 30 }
+// ];
+
+// console.log(
+//   users.find((e)=>e.age==30)
+// )
+
+
+// update the Object value ✅
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
+
+
+// let newUser=users.map((user)=>user.name=="Bob"? {...user, age:99}:user)
+
+// console.log(newUser)
+
+
+// Example 6: Removing an Object from an Array ✅
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
+
+
+// let val=users.filter((e)=>e.name!=="Bob")
+
+// console.log(val)
+
+// Example 7: Mapping an Array of Objects to a New Array ✅
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 35 }
+// ];
+
+// let newArray=[...users]
+
+// console.log(newArray)

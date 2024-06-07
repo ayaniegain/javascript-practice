@@ -5,7 +5,7 @@
   "main": "dsa_prac.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Js dsa_pracs.js"
+    "start": "nodemon Js lernerbucket.js"
   },
   "keywords": [],
   "author": "",
