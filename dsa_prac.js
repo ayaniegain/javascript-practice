@@ -855,6 +855,8 @@ Omega() =>exact and lower bound , basically constant, best case but not usefull.
 // console.log(res);
 
 
+// -----------------------****----------------
+
 
 
 

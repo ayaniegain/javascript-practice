@@ -968,3 +968,40 @@ console.log(checkIndexValue(str,str1))
 // let newArray=[...users]
 
 // console.log(newArray)
+
+
+
+// const repeatDuplicate =(no)=>{
+//   let newarr=[...no]
+
+//   console.log(newarr)
+
+// for (let i = 0; i < no.length; i++) {
+
+//   return newarr.includes(no) 
+  
+// }
+
+
+// }
+
+// let arr=[1,4,5,6,3,1]
+
+// let result =repeatDuplicate(arr)
+
+// console.log(result)
+
+
+const repeatDuplicate =(arr)=>{
+
+  let set = new Set(arr)
+
+  return set.size!==arr.length
+
+  
+  
+  
+}
+let result =repeatDuplicate([1,2,3,1])
+
+console.log(result)
