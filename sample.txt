@@ -1,0 +1,60 @@
+Certainly! Here's a set of coding practice questions for JavaScript:
+
+### Basic Level:
+
+1. Write a function that returns the largest of two numbers.
+2. Write a function that checks whether a given number is even or odd.
+3. Write a function that converts Celsius to Fahrenheit.
+4. Write a function that takes an array of numbers and returns the sum of all numbers.
+5. Write a function that takes a string and returns the reverse of the string.
+
+### Intermediate Level:
+
+6. Write a function that takes an array of integers and returns the average (mean) of all the elements.
+7. Write a function that takes an array of numbers and returns the numbers that are even.
+8. Write a function that checks whether a given string is a palindrome.
+9. Write a function that takes two arrays and returns a new array with unique elements from both arrays.
+10. Write a function that takes a number and returns true if the number is prime, false otherwise.
+
+### Advanced Level:
+
+11. Write a function that sorts an array of integers in ascending order (without using the built-in `sort` method).
+12. Write a function that implements a binary search algorithm.
+13. Write a function that finds the maximum consecutive sum in an array of numbers (Kadane's Algorithm).
+14. Implement a function that flattens nested arrays.
+15. Write a function that implements a basic calculator (addition, subtraction, multiplication, division).
+
+### Object-oriented Programming (OOP) in JavaScript:
+
+16. Create a class `Person` with properties `name` and `age`, and a method `greet()` that prints a greeting with the person's name.
+17. Create a class `Rectangle` with properties `width` and `height`, and methods `area()` and `perimeter()`.
+18. Implement a class `Stack` with methods `push`, `pop`, and `isEmpty`.
+19. Create a class `BankAccount` with properties `balance` and methods `deposit()` and `withdraw()`.
+20. Implement inheritance in JavaScript with a base class and a derived class demonstrating method overriding.
+
+### Asynchronous Programming:
+
+21. Write a function that simulates asynchronous behavior using `setTimeout()` and a callback.
+22. Write a function that makes an asynchronous HTTP request using `fetch` and handles the response using Promises.
+23. Implement a function that chains multiple asynchronous operations using `async/await`.
+
+### DOM Manipulation:
+
+24. Write a function that toggles the background color of a DOM element on click.
+25. Implement a function that fetches data from an API and dynamically creates HTML elements to display the data.
+
+### ES6 and Modern JavaScript:
+
+26. Implement a function using arrow functions and template literals.
+27. Write a function that uses destructuring to extract values from objects or arrays.
+28. Implement a function that uses `Map` or `Set` to manage unique elements.
+
+### Testing:
+
+29. Write unit tests for a simple JavaScript function using a testing framework like Jest or Mocha.
+
+### Project-based Questions:
+
+30. Build a small web application (e.g., a to-do list, weather app) using HTML, CSS, and JavaScript, focusing on functionality and user interaction.
+
+These coding practice questions cover various levels of difficulty and aspects of JavaScript programming. They are designed to help you improve your problem-solving skills and deepen your understanding of JavaScript concepts. Happy coding!

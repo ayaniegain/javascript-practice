@@ -767,7 +767,6 @@ console.log(newValue);
 
 // console.log(co);
 
-
 // ---------new Prac
 
 // let value="hello world";
@@ -789,17 +788,13 @@ console.log(newValue);
 //   newArry.push(course)
 // })
 
-
 // // console.log(newArry)
-
 
 // let username = ("          Enter your username  :            ");
 // username = username.trim();
 // username = username.replace(" ","");
 
 // Array.of(username)
-
-
 
 // Username might have extra spaces
 
@@ -841,8 +836,6 @@ console.log(isStringEmpty(str))
 
 */
 
-
-
 // 3/ Retrieve a specific character from a string based on its index.
 // 4// join two string
 // 5// total length
@@ -864,15 +857,13 @@ console.log(checkIndexValue(str,str1))
 // function extractTheString(str) {
 
 //   return str.slice(6,str.length)
-  
+
 // }
 
 // console.log(extractTheString("hello I will stop tomorrow"))
 
-
 // let str ="Viru playing cricket, Viru is nice player"
 // let replacestr="Ayan"
-
 
 //       let res=str.replaceAll("Viru",replacestr)
 
@@ -899,7 +890,6 @@ console.log(checkIndexValue(str,str1))
 //   { name: "Cherry", price: 2.5 }
 // ];
 
-
 // let res=products.reduce((acc,curr)=>{
 //   return (acc+curr.price)
 // },0)
@@ -916,7 +906,6 @@ console.log(checkIndexValue(str,str1))
 
 // let newarry= users.sort((a,b)=>a.age-b.age)
 
-
 // console.log(newarry)
 //find the value✅
 // const users = [
@@ -929,7 +918,6 @@ console.log(checkIndexValue(str,str1))
 //   users.find((e)=>e.age==30)
 // )
 
-
 // update the Object value ✅
 
 // const users = [
@@ -938,11 +926,9 @@ console.log(checkIndexValue(str,str1))
 //   { name: "Charlie", age: 35 }
 // ];
 
-
 // let newUser=users.map((user)=>user.name=="Bob"? {...user, age:99}:user)
 
 // console.log(newUser)
-
 
 // Example 6: Removing an Object from an Array ✅
 
@@ -951,7 +937,6 @@ console.log(checkIndexValue(str,str1))
 //   { name: "Bob", age: 30 },
 //   { name: "Charlie", age: 35 }
 // ];
-
 
 // let val=users.filter((e)=>e.name!=="Bob")
 
@@ -969,8 +954,6 @@ console.log(checkIndexValue(str,str1))
 
 // console.log(newArray)
 
-
-
 // const repeatDuplicate =(no)=>{
 //   let newarr=[...no]
 
@@ -978,10 +961,9 @@ console.log(checkIndexValue(str,str1))
 
 // for (let i = 0; i < no.length; i++) {
 
-//   return newarr.includes(no) 
-  
-// }
+//   return newarr.includes(no)
 
+// }
 
 // }
 
@@ -991,17 +973,223 @@ console.log(checkIndexValue(str,str1))
 
 // console.log(result)
 
+// const repeatDuplicate =(arr)=>{
 
-const repeatDuplicate =(arr)=>{
+//   let set = new Set(arr)
 
-  let set = new Set(arr)
+//   return set.size!==arr.length
 
-  return set.size!==arr.length
+// }
+// let result =repeatDuplicate([1,2,3,1])
+
+// console.log(result)
+
+// 1. Write a JavaScript program to display the current day and time in the following format.
+
+// Sample Output :
+// Today is : Tuesday.
+// Current time is : 10 PM : 30 : 38
+
+// let dateValue = new Date();
+
+// const weekdays = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+// let hour = dateValue.getHours();
+
+// let prepand = hour >= 12 ? " PM " : " AM ";
+// hour = hour >= 12 ? hour - 12 : hour;
+// if (hour === 0 && prepand === " PM ") {
+//   if (minute === 0 && second === 0) {
+//     hour = 12;
+//     prepand = " Noon";
+//   } else {
+//     hour = 12;
+//     prepand = " PM";
+//   }
+// }
+
+// let min = dateValue.getMinutes();
+// let sec = dateValue.getSeconds();
+// let dayofWeek = weekdays[dateValue.getDay()];
+
+// console.log(`
+
+//   Today is : ${dayofWeek}.
+// Current time is : ${hour} ${prepand} : ${min} : ${sec}
+
+//   `);
+
+// 8. Write a JavaScript program where the program takes a random integer between 1 to 10,
+//  the user is then prompted to input a guess number.
+//  If the user input matches with guess number,
+//  the program will display a message "Good Work" otherwise display a message "Not matched".
+
+// function randomValue() {
+
+// let value=6
+// let random=Math.floor(Math.random()*10)+1
+
+// if (random==value) {
+//   return "good work ❤️"
+
+// }else{
+//   return "does't match ⚔️"
+// }
+// }
+
+// let res=randomValue()
+
+// console.log(res)
+
+// 9. Write a JavaScript program to calculate days left until next Christmas.
+
+// let cristmasdayNumber;
+
+// let newDate= new Date()
+
+// console.log(newDate)
+
+// Q 3. Write a javaScript program to Count the Number of Words in a given String.
+
+// let name= "hello how are you?"
+
+// let newname=name.split(" ")
+
+// console.log(newname.length)
+
+// let arr = [23, 443, 44, 55, 12, 90];
+
+// let no = 12;
+
+// function indexNo(arr, no) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == no) {
+//       return i;
+//     }
+//   }
+// }
+// let res = indexNo(arr, no);
+
+// console.log(res);
+
+
+
+// 1. Write a function that returns the largest of two numbers.
+
+
+
+// const  twoNo=(a,b)=>{
+
+//   if (a<b) {
+//     return b
+//   }else{
+//     return a
+//   }
+
+
+// }
+
+// let res= twoNo(334,77)
+
+// console.log(res)
+
+// 2. Write a function that checks whether a given number is even or odd.
+
+
+// const  evenOdd=(no)=>{
+
+//   if (no%2==0) {
+//     return "even"
+//   }else{
+//     return "odd"
+//   }
+  
+
+
+// }
+
+// let result= evenOdd(3341)
+
+// console.log(result)
+
+// 3. Write a function that converts Celsius to Fahrenheit.
+
+// function celFar(temp) {
+
+//   // °F = °C×(9/5)+32
+
+//   let far= temp *(9/5)+32
+
+//   return far
+  
+// }
+
+// let res= celFar(100)
+
+// console.log(res)
+
+// 4. Write a function that takes an array of numbers and returns the sum of all numbers.
+
+
+
+// function sumOfArray(arr) {
+//   let sum=0
+
+//   for (const i of arr) {
+
+//      sum= sum+i
+    
+//   }
+
+//   return sum
+
 
   
-  
-  
-}
-let result =repeatDuplicate([1,2,3,1])
+// }
 
-console.log(result)
+
+// let arr=[1,2,3,4]
+
+// let res= sumOfArray(arr)
+
+// console.log(res)
+
+// 5. Write a function that takes a string and returns the reverse of the string.
+
+
+// function resvOfStr(strArray) {
+
+//   let val=""
+//  for (let i = str.length-1; i > 0; i--) {
+// //  val.push(str[i])
+
+// val +=str[i]
+
+// // return str[i]
+  
+//  }
+
+//  let cc=val
+
+//  return cc 
+
+  
+// }
+
+// let str="I love myself"
+
+// let strArray=str.split('')
+// // console.log(strArray)
+
+// let res= resvOfStr(strArray)
+
+// console.log(res)
+
