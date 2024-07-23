@@ -1080,11 +1080,7 @@ console.log(checkIndexValue(str,str1))
 
 // console.log(res);
 
-
-
 // 1. Write a function that returns the largest of two numbers.
-
-
 
 // const  twoNo=(a,b)=>{
 
@@ -1094,7 +1090,6 @@ console.log(checkIndexValue(str,str1))
 //     return a
 //   }
 
-
 // }
 
 // let res= twoNo(334,77)
@@ -1103,7 +1098,6 @@ console.log(checkIndexValue(str,str1))
 
 // 2. Write a function that checks whether a given number is even or odd.
 
-
 // const  evenOdd=(no)=>{
 
 //   if (no%2==0) {
@@ -1111,8 +1105,6 @@ console.log(checkIndexValue(str,str1))
 //   }else{
 //     return "odd"
 //   }
-  
-
 
 // }
 
@@ -1129,7 +1121,7 @@ console.log(checkIndexValue(str,str1))
 //   let far= temp *(9/5)+32
 
 //   return far
-  
+
 // }
 
 // let res= celFar(100)
@@ -1138,23 +1130,18 @@ console.log(checkIndexValue(str,str1))
 
 // 4. Write a function that takes an array of numbers and returns the sum of all numbers.
 
-
-
 // function sumOfArray(arr) {
 //   let sum=0
 
 //   for (const i of arr) {
 
 //      sum= sum+i
-    
+
 //   }
 
 //   return sum
 
-
-  
 // }
-
 
 // let arr=[1,2,3,4]
 
@@ -1163,7 +1150,6 @@ console.log(checkIndexValue(str,str1))
 // console.log(res)
 
 // 5. Write a function that takes a string and returns the reverse of the string.
-
 
 // function resvOfStr(strArray) {
 
@@ -1174,14 +1160,13 @@ console.log(checkIndexValue(str,str1))
 // val +=str[i]
 
 // // return str[i]
-  
+
 //  }
 
 //  let cc=val
 
-//  return cc 
+//  return cc
 
-  
 // }
 
 // let str="I love myself"
@@ -1192,4 +1177,50 @@ console.log(checkIndexValue(str,str1))
 // let res= resvOfStr(strArray)
 
 // console.log(res)
+
+// 6. Write a function that takes an array of integers and returns the average (mean) of all the elements.
+
+// function avgMean(arr) {
+
+// return  arr.reduce((cur,res)=>{
+
+//    return cur+res/arr.length
+
+//   },0)
+
+// }
+
+// let arr=[1,2,3,5,4]
+// let res=avgMean(arr)
+
+// console.log(res)
+
+// 7. Write a function that takes an array of numbers and returns the numbers that are even.
+
+// let evenArray=(arr)=>{
+
+//   return arr.filter((even)=>even%2==0)
+
+// }
+
+// let arr= [23,44,67,33,22,77,65,44]
+
+// let res=evenArray(arr)
+
+// console.log(res)
+
+// 8. Write a function that checks whether a given string is a palindrome.
+
+// let pallen = (str) => {
+//   return str == str.split("").reverse().join("");
+// };
+
+// let str = "bob"; 
+
+// let res = pallen(str);
+
+// console.log(res);
+
+// 9. Write a function that takes two arrays and returns a new array with unique elements from both arrays.
+
 
