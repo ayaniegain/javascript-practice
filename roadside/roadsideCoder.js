@@ -612,5 +612,3 @@ displayfunction(square)
 
 
 // Promises ✅
-
-

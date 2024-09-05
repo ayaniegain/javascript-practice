@@ -4,8 +4,7 @@
   "description": "",
   "main": "dsa_prac.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Js practice_set.js"
+      "start": "nodemon \"JS practice/JS_concept.js\""
   },
   "keywords": [],
   "author": "",

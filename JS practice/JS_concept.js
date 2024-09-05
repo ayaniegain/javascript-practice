@@ -497,5 +497,30 @@ res()
 res()
 
  */
+// -----------------
 
-console.log("first")
+// 1. even odd
+
+// const EvenOdd=(n)=>(n%2==0? 'even': 'odd')
+
+// let res=EvenOdd(3)
+
+// console.log(res)
+
+
+//  function findMethod(){
+//   let arr = [{id:1,name:"sai"},{id:2,name:"krishna"}];
+//   let data = arr.findIndex(x=> x.id==2)
+//   console.log(data)
+//   }
+
+//   findMethod()
+  let data = {
+    name: "Sai",
+    lang: "English"
+  };
+
+  console.log( Object.keys(data))
+  console.log( Object.values(data)) 
+  console.log( Object.entries(data)) 
+          
