@@ -1223,4 +1223,3 @@ console.log(checkIndexValue(str,str1))
 
 // 9. Write a function that takes two arrays and returns a new array with unique elements from both arrays.
 
-
