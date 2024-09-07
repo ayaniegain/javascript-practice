@@ -515,12 +515,15 @@ res()
 //   }
 
 //   findMethod()
-  let data = {
-    name: "Sai",
-    lang: "English"
-  };
+  // let data = {
+  //   name: "Sai",
+  //   lang: "English"
+  // };
 
-  console.log( Object.keys(data))
-  console.log( Object.values(data)) 
-  console.log( Object.entries(data)) 
+  // console.log( Object.keys(data))
+  // console.log( Object.values(data)) 
+  // console.log( Object.entries(data)) 
           
+
+
+  
