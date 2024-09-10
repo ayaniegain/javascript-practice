@@ -1215,7 +1215,7 @@ console.log(checkIndexValue(str,str1))
 //   return str == str.split("").reverse().join("");
 // };
 
-// let str = "bob"; 
+// let str = "bob";
 
 // let res = pallen(str);
 
@@ -1223,3 +1223,38 @@ console.log(checkIndexValue(str,str1))
 
 // 9. Write a function that takes two arrays and returns a new array with unique elements from both arrays.
 
+// function uniqueArray(x, y) {
+//   let array = [...x, ...y];
+
+//   let val = [...new Set(array)];
+
+//   return val;
+// }
+
+// let array1 = [1, 23, 5, 3, 66, 54, 32, 99];
+// let array2 = [1, 23, 55, 3, 86, 54, 92, 99];
+
+// console.log(uniqueArray(array1, array2));
+
+// 10. Write a function that takes a number and returns true if the number is prime, false otherwise.
+
+// prime no 0,1  no%2=0,1
+
+function isPrimeNo(no) {
+  if (no <2 ) return "not prime"
+   for (let i = 2; i < no; i++) {
+
+   
+   if (no%i===0) {
+     return "non prime";
+    
+   }
+   }
+
+   return 'prime'
+    
+  
+ 
+}
+
+console.log(isPrimeNo(2));

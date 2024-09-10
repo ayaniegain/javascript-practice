@@ -179,6 +179,36 @@
 
 // sum(name);
 
-
 // ✅arrow vs normal func
+// ✅Clousure 
 
+// function outerFunc() {
+//   function innerFunc(x) {
+//     return "hello "+x;
+//   }
+
+//   return innerFunc;
+// }
+
+// let res = outerFunc()(6);
+
+// console.log(res);
+
+
+nums = [-1,0,2,4,6,8], target = 4
+
+ 
+nums.hello('how rae you')
+nums.console("hello ")
+
+
+
+
+function search(nums, target) {
+
+
+  return   nums.findIndex((e)=>e===target)
+
+}
+
+console.log(search(nums,target))
