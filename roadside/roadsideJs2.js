@@ -180,7 +180,7 @@
 // sum(name);
 
 // ✅arrow vs normal func
-// ✅Clousure 
+// ✅Clousure
 
 // function outerFunc() {
 //   function innerFunc(x) {
@@ -194,21 +194,88 @@
 
 // console.log(res);
 
+// ✅Closure
 
-nums = [-1,0,2,4,6,8], target = 4
+// function outerScope() {
+//   let val = "roadside coder";
+//   function innerScope(no) {
 
- 
-nums.hello('how rae you')
-nums.console("hello ")
+// return function (params) {
+//   console.log("first")
+//   console.log(val + no);
+// }
+//   }
+//   return innerScope;
+// }
+// let res = outerScope();
+// res(5)();
+// ------------------imp⏭️
+// function creteBase(a) {
+//   return function (b) {
+//     console.log(a + b);
+//   };
+// }
 
+// var addSix = creteBase(6);
 
+// addSix(10);
+// addSix(21);
 
+// imp⏭️  optimize the code /
 
-function search(nums, target) {
+// function find() {
+//   let a = [];
 
+//   for (let i = 0; i < 100000; i++) {
+//     a[i] = i * i;
+//   }
+//   return function (index) {
+//     console.log(a[index]);
+//   }
+// }
 
-  return   nums.findIndex((e)=>e===target)
+// const closure =find()
+// closure(6)
+// closure(12)
+
+// ⏭️imp closure with optimize
+
+// function a() {
+//   for (var i = 0; i < 3; i++) {
+//     var x = function (i) {
+//       setTimeout(() => {
+//         console.log(i);
+//       }, i * 1000);
+//     };
+//     x(i);
+//   }
+// }
+
+// a();
+
+// private variable✅
+
+// moduled pattern✅
+
+// ⏭️run only once
+
+function likeTheVideo(cb) {
+
+  let view=cb()
+
+  console.log("subs to", view);
+  
+}
+
+function onceShowValue() {
+
+  let view;
+  view = "Roadside Coder";
+
+   
+ return view
+
 
 }
 
-console.log(search(nums,target))
+likeTheVideo(onceShowValue);

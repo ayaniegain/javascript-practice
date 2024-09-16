@@ -1240,21 +1240,23 @@ console.log(checkIndexValue(str,str1))
 
 // prime no 0,1  no%2=0,1
 
-function isPrimeNo(no) {
-  if (no <2 ) return "not prime"
-   for (let i = 2; i < no; i++) {
+// function isPrimeNo(no) {
+//   if (no <2 ) return "not prime"
+//    for (let i = 2; i < no; i++) {
 
    
-   if (no%i===0) {
-     return "non prime";
+//    if (no%i===0) {
+//      return "non prime";
     
-   }
-   }
+//    }
+//    }
 
-   return 'prime'
+//    return 'prime'
     
   
  
-}
+// }
 
-console.log(isPrimeNo(2));
+// console.log(isPrimeNo(2));
+
+
