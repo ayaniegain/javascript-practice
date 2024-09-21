@@ -259,23 +259,269 @@
 
 // ⏭️run only once
 
-function likeTheVideo(cb) {
+// ✅currying in js
 
-  let view=cb()
+// function f(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
 
-  console.log("subs to", view);
-  
-}
+// let res = f(4)(5);
 
-function onceShowValue() {
+// console.log(res);
 
-  let view;
-  view = "Roadside Coder";
+// ✅currying in js 2
 
-   
- return view
+// function sum(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// }
+
+// console.log(sum(2)(3)(6));
+
+// ✅currying in js 3
+
+// function evalute(a) {
+//   return function (b) {
+//     return function (c) {
+//       if (a == "sum") {
+//         return b + c;
+//       } else if (a == "substract") {
+//         return b - c;
+//       } else if (a == "multiply") {
+//         return b * c;
+//       } else if (a == "divide") {
+//         return b / c;
+//       }
+//     };
+//   };
+// }
+
+// console.log(evalute("sum")(4)(2));
+// console.log(evalute("multiply")(4)(2));
+// console.log(evalute("divide")(4)(2));
+// console.log(evalute("substract")(4)(2));
+
+// ✅infinite currying
+
+// function inf(a) {
+//   return function (b) {
+//     if (b) return inf(a + b);
+
+//     return a;
+//   };
+// }
+
+// console.log(inf(1)(2)(3)(4)());
+
+// ✅change content in dom using Currying
+
+// function updateElementText(id) {
+//   return function (content) {
+//     document.querySelector("#" + id).textContent = content;
+//   };
+// }
+
+// const updateHeader= updateElementText("heading")
+
+// updateHeader("Subscribe to RoadSideCoder");
+
+// ✅ OBJECT
+
+//  const user={
+//   name:"Roadsider Coder",
+//   age: 24,
+//  };
+
+//  user.age=44
+
+//  console.log(user)
+
+// let func = (a) => {
+//   delete a;
+
+//   return a;
+// };
+
+// console.log(func(6));
+
+// ---------☑️
+
+// const user = {
+//   name: "Roadsider Coder",
+//   age: 24,
+//   isDoen: true,
+// };
+// for (let key in user) {
+//   console.log(key);
+// }
+
+// const obj={
+//   a:"one",
+//   b:"two",
+//   a:"three",
+// }
+
+// console.log(obj) // a and b only
+
+// ☑️ IMPORTANT  chage the key value in object using function
+
+// const obj = {
+//   a: 100,
+//   b: 200,
+//   title: "My nums",
+// };
+
+// multiplayNumeric(obj);
+
+// function multiplayNumeric(obj) {
+//   for (let key in obj) {
+//     if (typeof obj[key] === "number") {
+//       obj[key] = obj[key] * 2;
+//     }
+//   }
+// }
+// console.log(obj);
+
+// ☑️ QS
+
+// const a={};
+// const b={key:"b"};
+// const c={key:"c"};
+
+// // break down----
+
+// // a["object object "]=123 // both same so its overlap
+// // a["object object "]=456
+
+// a[b]=123;
+// a[c]=456;
+
+// console.log(a)
+
+// ☑️ QS json stringify and parse
+
+// const user={
+//   name: "Mohit",
+//   age: 24,
+// }
+
+// let stringJson=JSON.stringify(user)
+
+// let parseJson= JSON.parse(stringJson)
+// console.log(stringJson)
+// console.log(parseJson)
+
+// EG:
+
+// const settings = {
+//   username: "Piyush",
+//   level: 18,
+//   health: 90,
+// };
+
+// console.log(JSON.stringify(settings, ["level", "health"]));
+
+// ☑️  spred object
+
+// let name='Linda'
+
+// console.log([...name])
+
+// console.log(name.split(""))
+// ☑️ object nested destrucring
+// let user = {
+//   name: "Ayan",
+//   age: 28,
+//   fullname:{
+//     firstName:"tapan",
+//     lastName:"kumar",
+//   }
+// };
+
+// const { name, age,fullname:{firstName,lastName} } = user;
+
+// console.log(firstName);
+
+// ☑️ VERY IMPORTANT OBJECT REFERENCING 18.07 minutes
+
+// let c={greeting:"Hey!"};
+// let d;
+
+// d=c
+
+// c.greeting="hello"
+
+// console.log(d.greeting) //both hello
+
+// ☑️ output false both
+
+// console.log({a:1}=={a:1})
+// console.log({a:1}==={a:1});
+
+// ☑️
+
+// let person ={name:'lynda'};
+// const members=[person];
+
+// person =null
+
+// console.log(members) //its save the ref of real perosn to members
+
+// ✅eg
+
+// const value = { number: 10 };
+
+// const multiply = (x = { ...value }) => {
+//   console.log((x.number *= 2));
+// };
+
+// multiply();
+// multiply();
+// multiply(value);
+// multiply(value);
+
+// ✅deep copy shalow copy
 
 
-}
+// // Original object
+// const originalObj = {
+//   name: "Ayan",
+//   address: {
+//     city: "Dinhata",
+//     state: "West Bengal"
+//   }
+// };
 
-likeTheVideo(onceShowValue);
+// // Shallow copy using Object.assign() or spread operator
+// const shallowCopy = { ...originalObj };
+
+// // Modify the shallow copy
+// shallowCopy.address.city = "Kolkata";
+
+// // Both objects will have the modified city
+// console.log(originalObj.address.city); // Output: "Kolkata"
+// console.log(shallowCopy.address.city); // Output: "Kolkata"
+
+// // Original object
+// const originalObj = {
+//   name: "Ayan",
+//   address: {
+//     city: "Dinhata",
+//     state: "West Bengal"
+//   }
+// };
+
+// // Deep copy using JSON methods
+// const deepCopy = JSON.parse(JSON.stringify(originalObj));
+
+// // Modify the deep copy
+// deepCopy.address.city = "Kolkata";
+
+// // Only the deep copy is modified, the original remains the same
+// console.log(originalObj.address.city); // Output: "Dinhata"
+// console.log(deepCopy.address.city);    // Output: "Kolkata"
