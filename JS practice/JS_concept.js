@@ -2,7 +2,7 @@
 // (function () {
 //    console.log("hello");
 
-const { Axios } = require("axios");
+// const { Axios } = require("axios");
 
 //  })()
 
@@ -525,5 +525,12 @@ res()
   // console.log( Object.entries(data)) 
           
 
+  const user=[
+    {id:1,name:'hello1',age:30},
+    {id:2,name:'hello2',age:15},
+    {id:3,name:'hello3',age:20},
+    {id:4,name:'hello4',age:15},
+    {id:5,name:'hello5',age:40}
+  ]
 
-  
+ console.log(user.find((item)=>item.age==15))

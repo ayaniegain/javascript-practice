@@ -1260,3 +1260,4 @@ console.log(checkIndexValue(str,str1))
 // console.log(isPrimeNo(2));
 
 
+console.log("first")
