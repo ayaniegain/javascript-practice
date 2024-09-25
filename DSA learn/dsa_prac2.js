@@ -140,3 +140,27 @@
 
 // console.log(arr);
 
+// ☑️Recursion 11t
+
+// function rec(x) {
+//     console.log(x);
+
+//     if (x < 10) {
+//         rec(x + 1);
+//     }
+// }
+// let x = 0;
+// rec(x);
+
+// ☑️factorial
+
+// function fact(no) {
+//   if (no == 0) {
+//     return 1;
+//   }
+
+//   return fact(no - 1) * no;
+// }
+// let no = 5;
+// console.log(fact(no));
+
