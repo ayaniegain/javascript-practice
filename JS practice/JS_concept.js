@@ -507,7 +507,6 @@ res()
 
 // console.log(res)
 
-
 //  function findMethod(){
 //   let arr = [{id:1,name:"sai"},{id:2,name:"krishna"}];
 //   let data = arr.findIndex(x=> x.id==2)
@@ -515,22 +514,36 @@ res()
 //   }
 
 //   findMethod()
-  // let data = {
-  //   name: "Sai",
-  //   lang: "English"
-  // };
+// let data = {
+//   name: "Sai",
+//   lang: "English"
+// };
 
-  // console.log( Object.keys(data))
-  // console.log( Object.values(data)) 
-  // console.log( Object.entries(data)) 
-          
+// console.log( Object.keys(data))
+// console.log( Object.values(data))
+// console.log( Object.entries(data))
 
-  const user=[
-    {id:1,name:'hello1',age:30},
-    {id:2,name:'hello2',age:15},
-    {id:3,name:'hello3',age:20},
-    {id:4,name:'hello4',age:15},
-    {id:5,name:'hello5',age:40}
-  ]
+//   const user=[
+//     {id:1,name:'hello1',age:30},
+//     {id:2,name:'hello2',age:15},
+//     {id:3,name:'hello3',age:20},
+//     {id:4,name:'hello4',age:15},
+//     {id:5,name:'hello5',age:40}
+//   ]
 
- console.log(user.find((item)=>item.age==15))
+//  console.log(user.find((item)=>item.age==15))
+
+// let other = {
+//   friends: [{ name: "sam" }, { name: "peter" }],
+// };
+
+// console.log(other.friends[1].name)
+
+
+
+  // let arr=[23,45,22,13] 
+
+
+  // let ss=new Map(arr)
+
+  // console.log(ss.size) 

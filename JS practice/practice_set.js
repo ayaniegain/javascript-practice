@@ -1260,4 +1260,24 @@ console.log(checkIndexValue(str,str1))
 // console.log(isPrimeNo(2));
 
 
-console.log("first")
+//  var age= 20;
+
+// console.log("value is ",age);
+
+// var age=30
+
+
+// const john={
+//   name: 'John Doe',
+//   sayName: function () {
+//     console.log(this.name);
+//   }
+// }
+
+// function sayName(){
+
+//   console.log(this.name)
+
+// }
+
+// sayName.call(john)
