@@ -539,11 +539,58 @@ res()
 
 // console.log(other.friends[1].name)
 
+// let arr=[23,45,22,13]
 
+// let ss=new Map(arr)
 
-  // let arr=[23,45,22,13] 
+// console.log(ss.size)
 
+// --------✅OBJECT------------
 
-  // let ss=new Map(arr)
+// let user = {
+//   name: "sam",
+// };
 
-  // console.log(ss.size) 
+// let employee={
+//   name:"Alex"
+// }
+
+// // let clone= Object.assign({},employee)
+
+// let cloneEmployee= {...employee}
+
+// employee.name="hari"
+
+// console.log(user.name);
+// console.log(employee.name);
+// console.log(cloneEmployee.name);
+
+//  ☑️☑️shallow copy doesnot works with nested Object .
+
+let user1 = {
+  name: "ayan1",
+  address: {
+    street: "124-park1",
+  },
+};
+
+let user2 = {
+  name: "ayan2",
+  address: {
+    street: "124-park2",
+  },
+};
+
+// COPY❌
+// user1=user2
+// 🆗CLONE
+
+// cloneObj = { ...user2 };
+// cloneObj = Object.assign({},user2);
+cloneObj = structuredClone(user2); //Deep copy
+
+user2.name = "Madan";
+user2.address.street = "999-snow";
+
+console.log(user2);
+console.log(cloneObj);

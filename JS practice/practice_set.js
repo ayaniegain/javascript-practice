@@ -1281,3 +1281,5 @@ console.log(checkIndexValue(str,str1))
 // }
 
 // sayName.call(john)
+
+
