@@ -4,7 +4,7 @@
   "description": "",
   "main": "dsa_prac.js",
   "scripts": {
-      "start": "nodemon \"./JS practice/JS_concept.js\""
+      "start": "nodemon \"./JS practice/JS_concept2.js\""
   },
   "keywords": [],
   "author": "",

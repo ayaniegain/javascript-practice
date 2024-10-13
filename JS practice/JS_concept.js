@@ -566,7 +566,7 @@ res()
 // console.log(cloneEmployee.name);
 
 //  ☑️☑️shallow copy doesnot works with nested Object .
-
+/*
 let user1 = {
   name: "ayan1",
   address: {
@@ -594,3 +594,4 @@ user2.address.street = "999-snow";
 
 console.log(user2);
 console.log(cloneObj);
+*/
