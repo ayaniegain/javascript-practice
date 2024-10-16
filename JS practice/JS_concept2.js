@@ -283,7 +283,7 @@
 // console.log(res);
 
 // function processArray(arr, CB, inc) {
-    
+
 //     let finalArray = [];
 //   for (const i of arr) {
 //     finalArray.push(i * inc);
@@ -302,16 +302,169 @@
 
 // ✅Object and more immutabality
 
+// const user = {
+//   name: "ayan",
+//   age: 27,
+//   is_Married: false,
+//   has_Car: {
+//     car_name: "BMW",
+//     price: 2300,
+//   },
+// };
 
-const user={
-    name:"ayan",
-    age:27,
-    is_Married: false
-}
+// //check mutable or not
+// console.log(Object.isExtensible(user))
+
+// //prevent mutablity
+// Object.preventExtensions(user)
+// user['address']="kolkata";
+
+// // ----SEAL______ can't create or delte only update
+
+// Object.seal(user);
+
+// delete user['name']
+
+// user['name']='ratan'
+
+// // ----FREEZE______ can't do any operation not work for nested object
+
+// Object.freeze(user);
+// user['name']='ratan3' //cn't do
+
+// check frozen
+
+// console.log(Object.isFrozen(user));
+// user.has_Car.car_name="AUDI" //can change the nested property
+
+// console.log(user)
+
+// ✅ nested freeze (DeepFreeze)
+
+// const deepFreeze = (obj) => {
+//   Object.keys(obj).forEach((key) => {
+//     if (typeof obj[key] === "object") {
+//       deepFreeze(obj[key]);
+//     }
+//   });
+
+//   Object.freeze(obj);
+// };
+
+// deepFreeze(user);
+
+// user.has_Car.car_name = "AUDI"; //can not change the nested property in deep freeze
+
+// // console.log(user)
+// ✅ ARRAY Freeze
+// let val=[56,34,66,21]
+
+// Object.freeze(val)
+// val.push(78)
+
+// console.log(val)
+
+// ☑️ split join
+
+// let str="my name? is .ayan ! biswas"
+
+// // let arr=str.split(' ',2)
+// // console.log(arr)
+// // console.log(''.split( ""))
+
+// // ---remove the spl character
+
+// // let rmvSpl=str.split(/[".,!,?"]/)
+
+// let name= "Ayan Biswas";
+// let subs= name.split(" ");
+// let joined=subs.join(' ') //using join arry to string
+
+// console.log(joined)
+
+// ☑️ Marge multiple array in different methode.
+
+// let arr1=[12,34,55,21];
+// let arr2=[2,4,5,1];
+// let str=["Ayan"]
+
+// // spread
+
+// let spredArray=[...arr1,...arr2,...str]
+
+// let concatArray=[].concat(arr1,arr2,str)
+// let pushArray=arr1.push(...arr2)
+
+// // console.log(spredArray)
+// // console.log(concatArray)
+// console.log(pushArray)
+
+// ☑️Object destructuring
+
+// const person = {
+//   name: "John Doe",
+//   age: 30,
+//   address: {
+//     street: "123 Main St",
+//     city: "New York",
+//     country: "USA",
+//     postalCode: "10001",
+//   },
+//   hobbies: ["reading", "traveling", "sports"],
+//   education: {
+//     highSchool: {
+//       name: "Central High",
+//       yearGraduated: 2010,
+//     },
+//   },
+// };
+
+// ---destructung
+// const {education:{highSchool:{name}} }=person
+
+// console.log(name)
+
+// ------dynamic get value 🆗
+
+// function getDynamicValue(key) {
+//   const { [key]: returnValue } = person;
+
+//   return returnValue;
+// }
+
+// let name = getDynamicValue("name");
+// let age = getDynamicValue("age");
+
+// console.log(name, age);
+
+// 🆗 destructring in params
+// 🆗 destructring in function
+// 🆗using destrucring itreatate the value
+// const carDetails = [
+//   {
+//     name: "Alice",
+//     age: 22,
+//     course: "Computer Science",
+//     enrolled: true,
+//   },
+//   {
+//     name: "Bob",
+//     age: 24,
+//     course: "Computer App",
+//     enrolled: false,
+//   },
+// ];
 
 
-user['address']="kolkata";
+// for (let {name,age}of carDetails){
+//     console.log(name,age)
+// }
 
-console.log(user)
 
-console.log(Object.isExtensible(user))
+// const [arr1,arr2]=carDetails;
+
+
+// console.log(arr1.enrolled)
+// console.log(arr2);
+
+
