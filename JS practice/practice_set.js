@@ -1283,3 +1283,24 @@ console.log(checkIndexValue(str,str1))
 // sayName.call(john)
 
 
+// ☑️ANARGRAM Problem
+
+
+// let s = "racecar";
+// let t = "carrace";
+
+// function sortMyvalue(s,t) {
+//   let newValue1 = s.split("");
+//   let newValue2 = t.split("");
+
+//   let arr1 = newValue1.sort();
+//   let arr2 = newValue2.sort();
+
+//   return JSON.stringify(arr1) === JSON.stringify(arr2);
+// }
+
+// let res=sortMyvalue(s,t)
+
+// console.log(res)
+
+// ☑️TWO SUM
