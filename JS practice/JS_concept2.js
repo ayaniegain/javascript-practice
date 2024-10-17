@@ -605,3 +605,52 @@
 // .catch((error)=>{
 //     console.log(error)
 // })
+
+// -----Promise Chain--------
+
+// let promise = new Promise((resolve, reject) => {
+//   let myMoney = 2;
+
+//   myMoney>=1? resolve(myMoney): reject("no money no honey")
+// });
+
+// function shallIbuyGame() {
+//   promise
+//     .then((a) =>a+20)
+//     .then((b) =>b+30)
+//     .then((c) =>console.log(c))
+//     .catch((error) =>console.log(error))
+// }
+
+//  shallIbuyGame()
+
+//❤️ -----Async Await with promises--------
+
+// function validateUser({ username, password }) {
+//   return new Promise((resolve, reject) => {
+//     if (username && password) {
+//       resolve(`hello my name is ${username}`);
+//     } else {
+//       reject("Invalid user");
+//     }
+//   });
+// }
+
+// const app = async () => {
+//   const data = {
+//     username: "test",
+//     password: "test",
+//   };
+
+//   try {
+//     let res = await validateUser(data);
+
+//     console.log(res);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// app();
+
+
