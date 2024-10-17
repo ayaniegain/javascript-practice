@@ -264,7 +264,7 @@
 // console.log(no)
 // var no
 
-// ☑️ call back function exercis
+// ☑️ call back function exercise
 
 // function processData(str, CB) {
 //   return CB(str);
@@ -319,7 +319,7 @@
 // Object.preventExtensions(user)
 // user['address']="kolkata";
 
-// // ----SEAL______ can't create or delte only update
+// // ----SEAL______ can't create or delte, only update
 
 // Object.seal(user);
 
@@ -455,16 +455,153 @@
 //   },
 // ];
 
-
 // for (let {name,age}of carDetails){
 //     console.log(name,age)
 // }
 
-
 // const [arr1,arr2]=carDetails;
-
 
 // console.log(arr1.enrolled)
 // console.log(arr2);
 
+// ☑️---------Asynchronous Programming---
+// call stack browser API
 
+// --> not occuring at the same time
+// --> can br occuring for browser API like, setTimeout,setInterval,click, mouse over etc
+
+// function f1() {
+//     console.log("f1")
+// }
+
+// function f2() {
+//     console.log("f2")
+
+// }
+
+// function main() {
+//     console.log("main")
+
+//     setTimeout(f1,0)
+
+//     f2()
+
+// }
+
+// main()
+
+// ☑️Promises
+// job queue / micro task queue
+
+// function f1() {
+//     console.log("f1")
+// }
+
+// function f2() {
+//     console.log("f2")
+
+// }
+
+// function main() {
+//     console.log("main")
+
+//     setTimeout(f1,0)
+
+//     new Promise((resolve,reject)=>{
+
+//         resolve("the promise fullfilled")
+
+//     }).then((result)=>console.log(result))
+
+//     f2()
+
+// }
+
+// main()
+
+// callback----🆗
+
+// function shallIbuyGame(cb) {
+//   let myMoney = 2;
+
+//   return cb(myMoney);
+// }
+
+// function rupees(money) {
+//   if (money >= 10) {
+//     return "yes i can get game ";
+//   } else {
+//     return "no i can not get game";
+//   }
+// }
+
+// let res = shallIbuyGame(rupees);
+
+// console.log(res);
+
+// sample promise example-------🆗
+
+// let promise = new Promise((resolve, reject) => {
+//   let myMoney = 2;
+
+//   if (myMoney>=10) {
+//     resolve("yes i can get game ");
+
+// } else {
+//     reject("no i can not get game");
+// }
+// });
+
+// function shallIbuyGame() {
+//   return  promise
+//     .then((statement) =>statement)
+//     .catch((error) =>error);
+// }
+
+//  shallIbuyGame().then((e)=>console.log(e))
+
+//-------- async await based api call--------- 🆗
+
+// async function fetchApi() {
+
+//     try {
+//        let response= await fetch(" https://jsonplaceholder.typicode.com/todos/1");
+//        let data=await response.json();
+//         return  data;
+//     //    console.log(data)
+
+//     } catch (error) {
+//         console.log(error)
+//     }
+
+// }
+
+// fetchApi().then((e)=>console.log(e))
+
+// (async()=>{
+
+//     let res=await fetchApi()
+//     console.log(res)
+
+// })()
+
+// ☑️---------promise based api call---------
+
+// let promise= new Promise((res,rej)=>{
+
+//     setTimeout(() => {
+
+//         fetch("https://jsonplaceholder.typicode.com/todos/1")
+//         .then((e)=>e.json())
+//         .then((data)=>res(data))
+//         .catch((error)=>rej(error))
+
+//     }, 1000);
+
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
