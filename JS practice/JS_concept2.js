@@ -653,4 +653,83 @@
 
 // app();
 
+// ☑️ Promise.all | promise.allSettled | promise.race | promise.any
+
+// let red=new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         reject('red promise')
+//     }, 4000);
+// })
+
+// let green=new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         reject('green promise')
+//     }, 3000);
+// })
+
+// let blue=new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         resolve('blue promise')
+//     }, 5000);
+// })
+
+// let result=Promise.allSettled([red,green,blue])
+
+// result.then((value)=>console.log(value))
+
+// ☑️--------------IMPORT AND EXPORT -------------
+// --names
+// import { sum,sub } from "./import_export/calc.js";
+// console.log(sum(4,2))
+// console.log(sub(7,2))
+// // --global
+// import * as calculation from "./import_export/calc.js";
+// import * as speed from "./import_export/func.js";
+// console.log(calculation.sum(90,7))
+// // --default
+// console.log(calculation.default(7, 2));
+// console.log(speed.default(90))
+// --combine
+// import * as combine from "./import_export/combine.js"
+// console.log(combine.calc.sub(67,32))
+// console.log(combine.checkSpeed(67))
+// console.log(combine.checkSpeed(8))
+
+// ---Dynamic import ❤️
+/*
+let check = true;
+
+if (check) {
+  try {
+    let { sum, sub } = await import("./import_export/calc.js");
+    let checkSpeed = await import("./import_export/func.js");
+    // console.log(sub(78,33))
+    // console.log(checkSpeed.default(89))
+
+    //promise based ------
+
+    // let promise= Promise.all([sub,sum,checkSpeed.default])
+
+    // promise.then((item)=>{
+    //         console.log(item[0](20,10))
+    //         console.log(item[1](40,20))
+    //         console.log(item[2](65))
+    // })
+
+    // async-await---------
+
+    const [subResult, sumResult, checkSpeedResult] = await Promise.all([
+      sub(20, 10),
+      sum(40, 20),
+      checkSpeed.default(65),
+    ]);
+
+    console.log(sumResult);
+    console.log(subResult);
+    console.log(checkSpeedResult);
+  } catch (error) {
+    console.error("Error occurred while processing:", error);
+  }
+}
+*/
 
