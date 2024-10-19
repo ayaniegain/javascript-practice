@@ -732,4 +732,64 @@ if (check) {
   }
 }
 */
+// ✅----------ARRAY // Array.with and Array.at (-1) not mutated original elm ------------
+// const number1=[1,2,3,4,5,6]
+
+// const newArray= number1.with(2,20)
+// // const newArray= number1.with(2,20).map((e)=>e*10)
+
+// const number2=[...number1]
+// number2[3]=10
+
+// console.log(newArray.at(-3))
+// console.log(number1)
+// // console.log(number2)
+// console.log(newArray)
+
+// ✅alphanumurical string sorting
+
+// const alphanumericArray = ['item10', 'item2', 'item1', 'item20', 'item3'];
+
+// // Create a new Intl.Collator instance with numeric sorting enabled
+// const collator = new Intl.Collator('en', { numeric: true }).compare;
+
+// // Sort the array using the collator
+// alphanumericArray.sort(collator);
+
+// console.log(alphanumericArray);
+
+
+// const nestedArray = [1, [2, [3, 4], [7, 5]], 6];
+// const flattenedArray = nestedArray.flat(Infinity);
+// console.log(flattenedArray); 
+
+// ✅Execution Context
+// ✅hoisting
+
+// name1()
+
+// function name1(params) {
+
+//   console.log("first")
+//   name()
+  
+// }
+
+
+// function name(params) {
+  
+//   console.log("sec")
+// }
+
+
+
+// test();
+
+// var test= function () {
+
+//   console.log("I am tested")
+  
+// }
+
+
 

@@ -1,6 +1,6 @@
 // // small possitive missing number 👀
 
-const { on } = require("nodemon");
+// const { on } = require("nodemon");
 
 // let Arr= [7,-4,3,1,2,6,9,-3]
 // function smallposMisstingNo(arr) {
@@ -1302,5 +1302,3 @@ console.log(checkIndexValue(str,str1))
 // let res=sortMyvalue(s,t)
 
 // console.log(res)
-
-// ☑️TWO SUM
