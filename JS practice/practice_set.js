@@ -1244,28 +1244,23 @@ console.log(checkIndexValue(str,str1))
 //   if (no <2 ) return "not prime"
 //    for (let i = 2; i < no; i++) {
 
-   
 //    if (no%i===0) {
 //      return "non prime";
-    
+
 //    }
 //    }
 
 //    return 'prime'
-    
-  
- 
+
 // }
 
 // console.log(isPrimeNo(2));
-
 
 //  var age= 20;
 
 // console.log("value is ",age);
 
 // var age=30
-
 
 // const john={
 //   name: 'John Doe',
@@ -1282,9 +1277,7 @@ console.log(checkIndexValue(str,str1))
 
 // sayName.call(john)
 
-
 // ☑️ANARGRAM Problem
-
 
 // let s = "racecar";
 // let t = "carrace";
@@ -1302,3 +1295,180 @@ console.log(checkIndexValue(str,str1))
 // let res=sortMyvalue(s,t)
 
 // console.log(res)
+
+// ✅-------23/10/24--------
+// 1
+// let no=129
+// let no2=34
+
+// function checkLargeNumber(no,no2) {
+
+//   if (no<no2) {
+//     return `${no2} is largest no;`
+
+//   }else{
+//     return `${no} is lowest no;`
+
+//   }
+
+// }
+// let result= checkLargeNumber(no,no2)
+
+// console.log(result)
+
+// 2
+// let no=88;
+
+// function evenOddCheck(no){
+
+//   if (no%2==0) {
+//     return(`even no`)
+//   }else{
+//     return (`odd no`)
+//   }
+
+// }
+
+// let res=evenOddCheck(no)
+
+// console.log(res)
+
+// 3
+
+// function celciusToFar(tempC) {
+//  return  tempF = tempC * (9/5) + 32.
+
+// }
+
+// let res= celciusToFar(50)
+
+// console.log(res)
+
+// 4
+
+// let arr=[3,8,9,2]
+
+// function sumOfArray(arr) {
+// let sum=0
+//   for(let i in arr){
+//     sum+=arr[i]
+//   }
+
+//   return sum;
+
+// }
+// let res=sumOfArray(arr)
+
+// console.log(res)
+
+// 5
+
+// let str = "hello";
+
+// function revOfString(str) {
+//   // return str.split('').reverse().join('')
+
+//   let val = '';
+
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     val+=(str[i]);
+//   }
+//   return val
+// }
+
+// let res = revOfString(str);
+
+// console.log(res);
+
+// 6
+// let x = [1, 2, 3, 4];
+
+// function avgMean(x) {
+//   let sum = 0;
+
+//   for (let i = 0; i < x.length; i++) {
+//     sum = sum + x[i];
+//   }
+//   let mean = sum / x.length;
+
+//   return mean;
+// }
+
+// let res = avgMean(x);
+
+// console.log(res);
+
+// 7
+// let arr=[46,35,33,6,4,12,93]
+// function filterevenNo(arr) {
+
+//   let even=[]
+//   for (const i in arr) {
+//     if (arr[i]%2==0) {
+//       even.push(arr[i])
+
+//     }
+
+//   }
+
+//   return even
+
+// }
+
+// let res= filterevenNo(arr);
+
+// console.log(res);
+
+// 8
+
+// let num = 151;
+// let str = num.toString();
+
+// function checkpallen(str) {
+
+//   if (str === "") return "null";
+
+//   let rev = str.split("").reverse().join("");
+
+//   if (rev === str) {
+//     return "pallen";
+//   } else {
+//     return "not pallen";
+//   }
+// }
+
+// let res = checkpallen(str);
+
+// console.log(res);
+
+// 9
+
+// let arr=[22,35,78,90,66,35]
+// let arr1=[29,35,78,70,6,35]
+
+// let nwArr= [...new Set(arr)]
+// let nwArr2= [...new Set(arr1)]
+
+// let array=[...nwArr,...nwArr2]
+
+// console.log(array)
+
+// let arr = [22, 35, 78, 90, 66, 35];
+// let arr1 = [29, 35, 78, 70, 6, 35];
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = 0; j < arr1.length; j++) {
+
+//       if (arr[i]!==arr[j]) {
+
+//         return
+        
+//       }
+
+
+//   }
+// }
+
+
+// ----------//PRAC
+
