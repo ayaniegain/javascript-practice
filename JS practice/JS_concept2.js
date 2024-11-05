@@ -791,5 +791,47 @@ if (check) {
   
 // }
 
+// ☑️-------CARASH COURSE ARRAY-----------✅
 
+// array creation 〽️
+
+// let array=[67,88]
+// let array1=new Array(34,89)
+// console.log( new Array(1,2)) //create a new array
+// console.log( new Array(1)) //constructor array create a empty element 1
+
+//how to get element from array 〽️
+
+
+// let items=["🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉"]
+
+// console.log(items[items.length-1])
+
+// for (const i of items) {
+//   console.log(i)
+// }
+
+// for(let i=0 ;i<=items.length-1;i++){
+
+//   console.log(items[i])
+// }
+
+// push, pop, shift and unshift mutable methode 〽️
+
+// items.push('🎆')
+
+// console.log(items)
+
+// array  clone items 〽️
+
+//  let animal=["🐰","🐷","🐍","🐫"]
+
+//  let animalCopy=animal.slice()
+
+//  console.log(animal)
+//  console.log(animalCopy)
+
+//  console.log(animal===animalCopy)
+
+// console.log(Array.isArray(animal))
 
