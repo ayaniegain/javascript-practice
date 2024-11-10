@@ -1472,3 +1472,12 @@ console.log(checkIndexValue(str,str1))
 
 // ----------//PRAC
 
+
+let a=[34,56,78,54]
+let b=[24,56,78,94]
+
+let z=[...a,...b]
+
+
+console.log(z)
+

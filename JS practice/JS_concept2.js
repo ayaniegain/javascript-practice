@@ -44,14 +44,27 @@
 
 // console.log(res)
 
-// rest parameters
+// rest parameters ☑️
 
 // function restParams(a, ...b) {
 //   console.log(a);
 //   console.log(b);
 // }
-
 // restParams(38, 56, 13, 34, 55, 14, 11, 90, 1);
+
+
+//spread operator☑️
+// Spread syntax can be used when all elements from an object or array need to be included in a new array or object,
+
+// let a=[34,56,78,54]
+// let b=[24,56,78,94]
+
+// let z=[...a,...b]
+
+
+// console.log(z)
+
+
 
 // var res=(x,y)=>x+y
 // console.log(res(5,6))
@@ -758,10 +771,9 @@ if (check) {
 
 // console.log(alphanumericArray);
 
-
 // const nestedArray = [1, [2, [3, 4], [7, 5]], 6];
 // const flattenedArray = nestedArray.flat(Infinity);
-// console.log(flattenedArray); 
+// console.log(flattenedArray);
 
 // ✅Execution Context
 // ✅hoisting
@@ -772,23 +784,20 @@ if (check) {
 
 //   console.log("first")
 //   name()
-  
-// }
 
+// }
 
 // function name(params) {
-  
+
 //   console.log("sec")
 // }
-
-
 
 // test();
 
 // var test= function () {
 
 //   console.log("I am tested")
-  
+
 // }
 
 // ☑️-------CARASH COURSE ARRAY-----------✅
@@ -801,7 +810,6 @@ if (check) {
 // console.log( new Array(1)) //constructor array create a empty element 1
 
 //how to get element from array 〽️
-
 
 // let items=["🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉"]
 
@@ -835,3 +843,89 @@ if (check) {
 
 // console.log(Array.isArray(animal))
 
+// array destructuring-----〽️ // a JavaScript feature that allows you to extract values from arrays and store them in separate variables
+
+// let [a,b,c,next='billi'] =['Ayan',"kanna","lungi"]
+// console.log(b,next)
+
+// skip array〽️
+// let [x,,z] =[10,23,45]
+
+// console.log(x,z)
+
+// NESTED ARRAY  〽️
+
+// let [a,b,c,[d,e]]= ["ram","syam","raban",["sita","surpanaka"]]
+
+// console.log(d)
+
+// Rest 〽️ //A rest  parameter that gets all of the remaining parameters of a function call via an Array. I
+
+// Spread〽️ // spread operator works on value,  The Spread Operator is used to 'spread' an iterable into its elements,
+
+// array length 〽️ 2**32-1
+
+// const arr1=[1,2,3];
+
+// console.log(arr1.length)
+
+// arr1[5]=67
+
+// arr1.length=4
+// arr1.length=0  //array delete
+
+// console.log(arr1)
+
+//-- Immutable property--//〽️
+
+// 'use strict'
+
+// const cash=[100,200,4000,500]
+
+// Object.defineProperty(cash,'length',{writable:false})
+
+// cash.length=0
+
+// console.log(cash)
+
+// ----closure
+
+//  let count = 0;
+
+// (function logCount() {
+//   if (count === 0) {
+//    let count = 1;  // Just assign to the existing variable
+//     console.log(count);  // Logs: 1
+//   }
+//   console.log(count);  // Logs: 1
+// })();
+
+// for (let i = 0; i < 5; i++) {
+//     setTimeout(()=>{
+
+//       console.log(i)
+
+//     },0)
+// }
+
+// function sum(x) {
+//   return function (y) {
+//     return x + y;
+//   };
+// }
+
+
+// console.log(sum(5)(7));
+
+
+// let arrr=[23,44,56,78,65]
+
+// // arrr.splice(3,2,99,98)
+// // let xx=arrr.slice(2,3)
+
+// // console.log(xx)
+
+
+// console.log( arrr.reduce((a,b)=>{
+//   return a+b
+// },0))
