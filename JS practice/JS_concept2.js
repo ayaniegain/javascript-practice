@@ -130,7 +130,7 @@
 
 //   clickBtn.addEventListener('click', sellMyMovieTicket);
 
-// HOC☑️
+// HOF☑️
 // function multiplyBy(multiplier) {
 //   return function (value) {
 //     return value * multiplier;
@@ -179,19 +179,19 @@
 // ☑️Call stack LIFO
 
 // function firstFunction() {
-//   console.log('Entering firstFunction');
+//   console.log('Entering firstFunction'); //1
 //   secondFunction();
-//   console.log('Exiting firstFunction');
+//   console.log('Exiting firstFunction'); //4
 // }
 
 // function secondFunction() {
-//   console.log('Entering secondFunction');
+//   console.log('Entering secondFunction'); //2
 //   thirdFunction();
-//   console.log('Exiting secondFunction');
+//   console.log('Exiting secondFunction'); //5
 // }
 
 // function thirdFunction() {
-//   console.log('Inside thirdFunction');
+//   console.log('Inside thirdFunction'); //3
 // }
 
 // firstFunction();
@@ -332,7 +332,7 @@
 // Object.preventExtensions(user)
 // user['address']="kolkata";
 
-// // ----SEAL______ can't create or delte, only update
+// // ----SEAL______ can't create or delete, only update
 
 // Object.seal(user);
 
@@ -381,9 +381,9 @@
 
 // let str="my name? is .ayan ! biswas"
 
-// // let arr=str.split(' ',2)
-// // console.log(arr)
-// // console.log(''.split( ""))
+// let arr=str.split(' ',2)
+// console.log(arr)
+// console.log(''.split( ""))
 
 // // ---remove the spl character
 
@@ -888,7 +888,7 @@ if (check) {
 
 // console.log(cash)
 
-// ----closure
+// ----closure ☑️
 
 //  let count = 0;
 
@@ -929,3 +929,33 @@ if (check) {
 // console.log( arrr.reduce((a,b)=>{
 //   return a+b
 // },0))
+
+// -------Object
+
+// let obj={
+//   name:"Rohit",
+//   age: 23,
+//   hasTalent:function (talent) { // get "cooking" value as parameter in talent 
+
+//       return(`${this.name} can do ${talent}`) // "this " used because it refer its own object name. 
+      
+//   }
+// }
+
+
+// console.log(obj.hasTalent("cooking")) //pass cooking as argument //aslo called the object function 
+
+
+// console.log(obj)
+
+
+// // EXTRA--------☑️
+
+// // can create function/ metode in object this way. 
+
+// obj.canRun =function(){
+//   console.log(`${this.name} can run Quickly`)
+// }
+// console.log(obj.canRun()) 
+
+// // console.log(obj)

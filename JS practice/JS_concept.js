@@ -595,3 +595,5 @@ user2.address.street = "999-snow";
 console.log(user2);
 console.log(cloneObj);
 */
+// -------------------------------
+console.log("first")

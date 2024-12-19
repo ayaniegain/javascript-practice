@@ -1462,22 +1462,348 @@ console.log(checkIndexValue(str,str1))
 //       if (arr[i]!==arr[j]) {
 
 //         return
-        
-//       }
 
+//       }
 
 //   }
 // }
 
-
 // ----------//PRAC
 
+// let a=[34,56,78,54]
+// let b=[24,56,78,94]
 
-let a=[34,56,78,54]
-let b=[24,56,78,94]
+// let z=[...a,...b]
 
-let z=[...a,...b]
+// console.log(z)
+
+// let Outer = (x) => {
+//   return (y) => {
+//     return x + y;
+//   };
+// };
+
+// console.log(Outer(50)(100));
+
+// callback
+// function showTable (storeDataCallBack){
+
+//   let storeData= storeDataCallBack()
+
+//   console.log(storeData)
+
+// }
+
+// function sortbyitem(){
+
+//   let allItems=200
+//   return  allItems
+
+// }
+
+// showTable(sortbyitem)
+
+// called function
+
+// function showTable(storeData) {
+//   console.log(storeData);
+// }
+
+// function sortbyitem() {
+//   let allItems = 200;
+//   showTable(allItems);
+// }
+
+// sortbyitem();
+
+// let pure=(x,y)=>{
+
+//   console.log("hello from ",x+y)
+// }
+
+// pure(5,6)
+// pure(5,6)
+// pure(5,6)
+// pure(5,6)
+// pure(5,6)
+
+// let ImPurefunc=(x,y)=>{
+
+//   console.log("hello from ",x+y)
+// }
+
+// ImPurefunc(4,5)
+// ImPurefunc(5,7)
+// ImPurefunc(6,5)
+// ImPurefunc(7,5)
+// ImPurefunc(8,5)
+
+// (()=>console.log("I am IIFE"))()
+
+// function firstFunction() {
+//   console.log('Entering firstFunction'); //1
+//   secondFunction();
+//   console.log('Exiting firstFunction'); //5
+// }
+
+// function secondFunction() {
+//   console.log('Entering secondFunction'); //2
+//   thirdFunction();
+//   console.log('Exiting secondFunction'); //4
+// }
+
+// function thirdFunction() {
+//   console.log('Inside thirdFunction'); //3
+// }
+
+// firstFunction();
+
+// let recc=(x)=>{
+
+//   if (x>=101) {
+
+//     return;
+
+//   }
+
+//   console.log(x)
+//   recc(x+1)
+
+// }
+
+// recc(0)
+
+// let obj1={
+//   "name":"ayan",
+//   age:20,
+// }
+
+// let obj2={
+//   "name":"Sayan",
+//   age:22,
+// }
+
+// obj1={...obj2}
+
+// obj2.age=99
+// obj1.age=90
+
+// console.log(obj1)
+// console.log(obj2)
+
+// let arr = [];
+
+// let obj = {};
+
+// function myfunc(x,y) {
+//   obj.name = x;
+//   obj.age = y;
+
+//   arr.push(obj);
+
+// }
+
+// myfunc("ayan",34)
+// myfunc("sayan",30)
+
+// console.log(arr);
+
+// let str="my name? is .ayan ! biswas"
+
+// let arr=str.split(' ',2)
+// console.log(arr)
+// console.log('str'.split(""))
+
+// let str="my name? is .ayan ! biswas"
+
+// let rmvSpl=str.split(/[".,!,?"]/)
+
+// console.log(rmvSpl)
+
+// let name= "Ayan Biswas";
+// let subs= name.split(" ");
+// let joined=subs.join(' ') //using join arry to string
+
+// console.log(joined)
+
+// let arr1=[12,34,55,21];
+// let arr2=[2,4,5,1];
+// let str=["Ayan"]
+
+// // spread
+
+// let spredArray=[...arr1,...arr2,...str]
+
+// let concatArray=[].concat(arr1,arr2,str)
+// let pushArray=arr1.push(...arr2)
+
+// console.log(spredArray)
+// console.log(concatArray)
+// console.log(pushArray)
+
+// console.log(arr1)
+// console.log(arr2)
+
+// const person = {
+//     name: "John Doe",
+//     age: 30,
+//     address: {
+//       street: "123 Main St",
+//       city: "New York",
+//       country: "USA",
+//       postalCode: "10001",
+//     },
+//     hobbies: ["reading", "traveling", "sports"],
+//     education: {
+//       highSchool: {
+//         name: "Central High",
+//         yearGraduated: 2010,
+//       },
+//     },
+//   };
+
+// function getDynamicValue(key) {
+//   const { [key]: returnValue } = person;
+
+//   return returnValue;
+// }
+
+// let name = getDynamicValue("name");
+// let age = getDynamicValue("age");
+// let address = getDynamicValue("address");
+
+// console.log(name, age,address);
+
+// let getNumber=(cb)=>{
+
+//   let a=4;
+//   let b=10;
+
+//   return cb(a,b)
+
+// }
+
+// let sum=(a,b)=>{
+//   return a+b
+// }
+
+// let res=getNumber(sum)
+// console.log(res)
+
+// let promise=new Promise((res,rej)=>{
+// let no=20
+//   if (no<20) {
+
+//     res("value resolved")
+
+//   }else{
+//     rej("value rejected")
+//   }
+
+// })
+
+// promise.
+// then((statement)=>{
+//   console.log(statement)
+
+// })
+// .catch((err)=>{
+//   console.log(err)
+// })
+
+// function getResults() {
+
+//  return promise.
+// then((statement)=>{
+//   return(statement)
+
+// })
+// .catch((err)=>{
+//   return(err)
+// })
+
+// }
+
+// let res=getResults()
+
+// res.then((e)=>
+//   console.log(e)
+
+// )
+
+// async function getMyvalue() {
+//   try {
+//     let result = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+
+//     let data = await result.json();
+
+//    return(data);
+//   } catch (error) {
+//    return(error);
+//   }
+// }
+
+// // getMyvalue().then((e)=>console.log(e))
 
 
-console.log(z)
+// (async()=>{
+
+
+//   console.log(await getMyvalue())
+
+// })()
+
+
+
+let obj={
+  "name":"kalu",
+  "age":2,
+  canplay:function(){
+
+    return `${this.name} can play ${this.talent[2]}`
+
+  }
+  
+  
+}
+obj.color='white';
+obj.talent=['biting','shouting','play ball'];
+Object.assign(obj,{'drink':'water'})
+
+for (let key in obj){
+
+  // console.log(key)
+
+}
+
+obj.canswim=function(){
+  return 'can swim'
+
+}
+
+// obj.canswim()
+
+// Object.assign(obj,canswim)
+
+
+
+
+// console.log(obj.canplay())
+// console.log(obj.canswim())
+// console.log(obj)
+
+
+// ------------------PRACTICE PROBLEM------------
+
+let arr= new Array(1,2,3,4,5)
+arr.pop()
+arr.push(99)
+arr.unshift(67)
+arr.shift()
+
+
+let arr1=[1,2]
+let arr2=[3,4]
+
+let newarry=arr1.concat(arr2)
 
